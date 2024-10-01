@@ -49,7 +49,9 @@
 :root {
   scroll-behavior: smooth;
 }
-
+/* a.logo.d-flex.align-items-center.me-auto {
+  margin-left: -5rem;
+} */
 /*--------------------------------------------------------------
   # General Styling & Shared Classes
   --------------------------------------------------------------*/
@@ -164,7 +166,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background:  #7d88ec;
+  background: #7d88ec;
   font-size: 15px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -1067,26 +1069,49 @@ button.btn.btn-info.ms-2 {
   background: #7d88ec;
 }
 
-
 /* RESPONSIVE LAYOUT */
+
+@media (max-width: 1200px) {
+  a.logo.d-flex.align-items-center.me-auto {
+    margin-left: 4.3rem;
+  }
+
+}
+
 @media (max-width: 768px) {
   .card h3 {
     font-size: 1.3rem;
   }
-  
+
   .card p {
     font-size: 0.9rem;
   }
-  .d-flex{
+  .d-flex {
     margin-right: auto;
   }
+  a.logo.d-flex.align-items-center.me-auto {
+    margin-left: -0.3rem;
+  }
+  a.btn-getstarted.flex-md-shrink-0 {
+    margin-right: 29rem;
+}
+a.btn-getstarted.flex-md-shrink-0 {
+  display: none;
+}
+.navmenu{
+  margin-right: 28rem;
+}
+
 }
 
 @media (max-width: 480px) {
   .slider-container {
     padding: 0 10px;
   }
-  
+  .navmenu{
+    margin-right: 50rem;
+  }
+
   .card h3 {
     font-size: 1.1rem;
   }
@@ -1094,8 +1119,35 @@ button.btn.btn-info.ms-2 {
   .card p {
     font-size: 0.85rem;
   }
-  .d-flex{
+  .d-flex {
     margin-right: auto;
   }
-  
+  a.logo.d-flex.align-items-center.me-auto {
+    margin-left: -1.3rem;
+  }
+  a.btn-getstarted.flex-md-shrink-0 {
+    display: none;
 }
+.navmenu{
+  margin-right: 48rem;
+}
+}
+@media (max-width: 380px) {
+
+.navmenu{
+  margin-right: 50rem;
+}
+}
+@media (max-width: 391px) {
+
+  .navmenu{
+    margin-right: 50rem;
+  }
+  }
+
+  @media (max-width: 345px) {
+
+    .navmenu{
+      margin-right: 52rem;
+    }
+    }
