@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.min.css";
 import "../css/homepage.css";
 import AOS from "aos"; // Importa AOS
-
+import { Helmet } from "react-helmet";
 
 import githubLogo from "../assets/img/github.png";
 
@@ -67,6 +67,19 @@ const Homepg = () => {
 
   return (
     <>
+      <Helmet>
+        <title>CortexFlow - The Open Source IoT simulation framework</title>
+        <meta
+          name="description"
+          content="A cutting-edge IoT simulation framework and big data analysis tool developed by CortexFlow."
+        />
+        <meta
+          name="keywords"
+          content="IoT, data simulation, big data, big data analytics, analysis framework,IoT analysis framework, CortexFlow"
+        />
+        <meta name="author" content="CortexFlow Team" />
+        <link rel="canonical" href="https://cortexflow.github.io/cortexflow" />
+      </Helmet>
       <Navbar />
       <main className="main">
         <section id="hero" className="hero section">
@@ -128,20 +141,20 @@ const Homepg = () => {
                 </div>
                 {showInfo && (
                   <div className="alert alert-info mt-3" role="alert">
-                    If you would like to contribute on a new
-                    feature, we ask you to open a discussion
-                    before submitting a Pull Request. This is to ensure that all new
-                    features align with the project's goals and to avoid
-                    overlapping work or conflicting views. Please initiate a
-                    discussion in the GitHub Discussions section where we can
-                    collectively review, refine, and approve your idea before
-                    you begin implementation. Pull Requests for new features
-                    that have not been discussed beforehand may be declined to
-                    maintain project coherence and ensure alignment with the
-                    broader roadmap. By collaborating in this manner, we can
-                    maintain clarity and consistency, ensuring that all
-                    contributors are working towards the same objectives. Thank
-                    you for your understanding and contributions!
+                    If you would like to contribute on a new feature, we ask you
+                    to open a discussion before submitting a Pull Request. This
+                    is to ensure that all new features align with the project's
+                    goals and to avoid overlapping work or conflicting views.
+                    Please initiate a discussion in the GitHub Discussions
+                    section where we can collectively review, refine, and
+                    approve your idea before you begin implementation. Pull
+                    Requests for new features that have not been discussed
+                    beforehand may be declined to maintain project coherence and
+                    ensure alignment with the broader roadmap. By collaborating
+                    in this manner, we can maintain clarity and consistency,
+                    ensuring that all contributors are working towards the same
+                    objectives. Thank you for your understanding and
+                    contributions!
                   </div>
                 )}
               </div>
