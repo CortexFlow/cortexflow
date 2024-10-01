@@ -47,7 +47,7 @@ const Homepg = () => {
     // Opzioni per Typed.js
     const options = {
       strings: [
-        "A cutting-edge data simulation and big data analysis framework developed by CortexFlow, designed to simplify the simulation and analysis of IoT devices.",
+        "A cutting-edge data simulation and big data analysis framework developed by CortexFlow, designed to simplify the simulation and the analysis of IoT devices.",
       ],
       showCursor: false,
       typeSpeed: 50,
