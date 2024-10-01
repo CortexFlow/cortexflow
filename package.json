@@ -1,5 +1,6 @@
 {
   "name": "cortexflow",
+  "homepage": "https://CortexFlow.github.io/cortexflow",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
