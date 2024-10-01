@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "aos/dist/aos.css";
@@ -7,7 +7,7 @@ import "glightbox/dist/css/glightbox.min.css";
 import "../css/homepage.css";
 import AOS from "aos"; // Importa AOS
 
-import roadmap from "../assets/img/ROADMAP.png";
+
 import githubLogo from "../assets/img/github.png";
 
 import Character1 from "../Characters/HeroCharacter1";

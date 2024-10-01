@@ -1,8 +1,7 @@
 import React from "react";
-import { FaTwitter, FaInstagram, FaGithub, FaDev } from "react-icons/fa"; // Importa le icone
 import "../css/footer.css";
 import { Link } from "react-router-dom";
-
+import { FaInstagram, FaGithub, FaDev } from 'react-icons/fa';
 import xLogo from "../assets/img/x-logo.png";
 
 const Footer = () => {
@@ -20,7 +19,7 @@ const Footer = () => {
                 <Link to="#" aria-label="Instagram">
                   <FaInstagram />
                 </Link>
-                <Link to="#" aria-label="GitHub">
+                <Link to="https://github.com/orgs/CortexFlow" aria-label="GitHub">
                   <FaGithub />
                 </Link>
                 <Link to="#" aria-label="Dev.to">
