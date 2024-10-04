@@ -34,13 +34,18 @@ const Homepg = () => {
   ];
 
   useEffect(() => {
+    // Verifica se l'utente è su un dispositivo mobile
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    // Intervallo in millisecondi: 10 secondi per desktop, 5 minuti per mobile
+    const changeInterval = isMobile ? 5 * 60 * 1000 : 10000;
+
     const interval = setInterval(() => {
       setCurrentComponent((prev) => (prev + 1) % components.length);
-    }, 10000); // Cambia ogni 10 secondi
+    }, changeInterval);
 
     return () => clearInterval(interval); // Pulizia dell'intervallo al momento della dismount
   }, [components.length]);
-
   useEffect(() => {
     AOS.init(); // Inizializza AOS
 

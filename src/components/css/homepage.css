@@ -1071,6 +1071,12 @@ button.btn.btn-info.ms-2 {
 
 /* RESPONSIVE LAYOUT */
 
+@media(max-width:1920px){
+  a.logo.d-flex.align-items-center.me-auto {
+    margin-left: -4.6rem;
+  }
+}
+
 @media (max-width: 1200px) {
   a.logo.d-flex.align-items-center.me-auto {
     margin-left: 4.3rem;
