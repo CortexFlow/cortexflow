@@ -316,7 +316,7 @@ const Homepg = () => {
         <section id="services" className="services section">
           <div className="container section-title" data-aos="fade-up">
             <h2>Technology</h2>
-            <p>Explore CorteFlow best features and services</p>
+            <p>Explore CortexFlow's best features and services</p>
           </div>
 
           <Slider />
