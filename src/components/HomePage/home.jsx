@@ -82,7 +82,7 @@ const Homepg = () => {
           name="keywords"
           content="IoT, data simulation, big data, big data analytics, analysis framework,IoT analysis framework,
            CortexFlow,open source,nachine learning,python,metrics,
-           metrics for IoT,tensorflow,database for IoT,simulation modelling,agent based modelling"
+           metrics for IoT,tensorflow,database for IoT,simulation modelling,agent based modelling,artificial intelligence for IoT"
         />
         <meta name="author" content="CortexFlow Team" />
         <link rel="canonical" href="https://cortexflow.github.io/cortexflow" />
