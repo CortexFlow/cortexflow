@@ -76,15 +76,15 @@ const Homepg = () => {
         <title>CortexFlow - The Open Source IoT simulation framework</title>
         <meta
           name="description"
-          content="A cutting-edge IoT simulation framework and big data analysis tool developed by CortexFlow."
+          content="A cutting-edge IoT simulation framework and big data analysis tool"
         />
         <meta
           name="keywords"
           content="IoT, data simulation, big data, big data analytics, analysis framework,IoT analysis framework,
-           CortexFlow,open source,nachine learning,python,metrics,
+           CortexFlow,open source,machine learning,python,metrics,
            metrics for IoT,tensorflow,database for IoT,simulation modelling,agent based modelling,artificial intelligence for IoT"
         />
-        <meta name="author" content="CortexFlow Team" />
+        <meta name="author" content="CortexFlow" />
         <link rel="canonical" href="https://www.cortexflow.org/" />
       </Helmet>
       <Navbar />

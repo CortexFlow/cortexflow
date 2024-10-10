@@ -27,7 +27,7 @@ const Footer = () => {
                 </Link>
               </div>
               <p className="mb-0 copyright">
-                &copy; 2024 CortexBrain. All rights reserved.
+                &copy; 2024 CortexFlow. All rights reserved.
               </p>
             </div>
 
