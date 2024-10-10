@@ -85,7 +85,7 @@ const Homepg = () => {
            metrics for IoT,tensorflow,database for IoT,simulation modelling,agent based modelling,artificial intelligence for IoT"
         />
         <meta name="author" content="CortexFlow Team" />
-        <link rel="canonical" href="https://cortexflow.github.io/cortexflow" />
+        <link rel="canonical" href="https://www.cortexflow.org/" />
       </Helmet>
       <Navbar />
       <main className="main">

@@ -37,9 +37,6 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
     },
   ],
-  {
-    basename: "/cortexflow", // Imposta il basename qui
-  }
 );
 
 export default router;

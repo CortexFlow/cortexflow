@@ -3,15 +3,15 @@ const fs = require("fs");
 const path = require("path");
 
 // Define the hostname and URLs for the sitemap file
-const hostname = "https://cortexflow.github.io/cortexflow/";
+const hostname = "https://www.cortexflow.org/";
 const urls = [
-    { path: "/", changefreq: "daily", priority: 1.0 },
-    { path: "/blog", changefreq: "daily", priority: 0.8 },
-    { path: "/newsletter", changefreq: "daily", priority: 0.8 },
-    { path: "/doc", changefreq: "daily", priority: 0.8 },
-    { path: "/examples", changefreq: "daily", priority: 0.8 },
-    { path: "/use-cases", changefreq: "daily", priority: 0.8 },
-  ];
+    { url: "/", changefreq: "daily", priority: 1.0 },
+    { url: "/blog", changefreq: "daily", priority: 0.8 },
+    { url: "/newsletter", changefreq: "daily", priority: 0.8 },
+    { url: "/doc", changefreq: "daily", priority: 0.8 },
+    { url: "/examples", changefreq: "daily", priority: 0.8 },
+    { url: "/use-cases", changefreq: "daily", priority: 0.8 },
+];
 
 // Create the sitemap instance
 const sitemapInstance = sitemap.createSitemap({
@@ -29,6 +29,9 @@ if (!fs.existsSync(directoryPath)) {
 }
 
 // Write the sitemap.xml file to the 'public' directory
-fs.writeFileSync(filePath, sitemapInstance.toString());
-
-console.log("Sitemap successfully generated and saved to " + filePath);
+try {
+  fs.writeFileSync(filePath, sitemapInstance.toString());
+  console.log("Sitemap successfully generated and saved to " + filePath);
+} catch (error) {
+  console.error("Error writing sitemap: ", error);
+}
