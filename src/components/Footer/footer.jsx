@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/footer.css";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaGithub, FaDev } from 'react-icons/fa';
+import { FaMedium, FaGithub, FaDev } from 'react-icons/fa';
 import xLogo from "../assets/img/x-logo.png";
 
 const Footer = () => {
@@ -13,16 +13,16 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-6">
               <h1 className="sitename-footer">CortexFlow</h1>
               <div className="social-icons">
-                <Link to="#" aria-label="Twitter">
+                <Link to="https://x.com/FlowCortex" aria-label="Twitter/X">
                   <img src={xLogo} alt="X-logo"className="x-logo" />
                 </Link>
-                <Link to="#" aria-label="Instagram">
-                  <FaInstagram />
+                <Link to="https://medium.com/@lorenzobradanini964" aria-label="Medium">
+                  <FaMedium />
                 </Link>
                 <Link to="https://github.com/orgs/CortexFlow" aria-label="GitHub">
                   <FaGithub />
                 </Link>
-                <Link to="#" aria-label="Dev.to">
+                <Link to="https://dev.to/cortexflow" aria-label="Dev.to">
                   <FaDev />
                 </Link>
               </div>
