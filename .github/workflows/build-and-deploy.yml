@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # O il branch che desideri monitorare per il deploy
+      - main
 
 jobs:
   build:
@@ -11,47 +11,47 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Check out the repository
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Imposta la versione di Node.js da usare
+          node-version: '16'
 
       - name: Install dependencies
-        run: npm install  # Installa le dipendenze del progetto
+        run: npm install
 
       - name: Build the project
-        run: npm run build  # Costruisce il progetto
+        run: npm run build
 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: build  # Carica la cartella build come artefatto
+          path: build
 
   deploy:
     name: Deploy
-    needs: build  # Aspetta che il job build sia completato
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3  # Check out the repository
+        uses: actions/checkout@v3
 
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: build  # Scarica l'artefatto nella cartella build
+          path: build
 
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.FTP_HOST }}  # Usa il server FTP dai secrets
-          username: ${{ secrets.FTP_USERNAME }}  # Usa il nome utente FTP dai secrets
-          password: ${{ secrets.FTP_PASSWORD }}  # Usa la password FTP dai secrets
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }} 
-          local-dir: build  # Specifica la directory locale da caricare
-          server-dir: /www.cortexflow.org  # Specifica la directory remota
-          dangerous-clean-slate: true  # Pulisci la directory remota se necessario
-          dry-run: true
+          local-dir: build
+          server-dir: /www.cortexflow.org
+          dangerous-clean-slate: true
+          dry-run: false
