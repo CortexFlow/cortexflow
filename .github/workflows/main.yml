@@ -1,4 +1,4 @@
-name: cortexflow server deployment
+name: cortexflow server build
 
 on: 
   push:
@@ -20,20 +20,5 @@ jobs:
       - name: Build the site        
         run: npm run build         
 
-  deploy:
-    name: site deploy via FTP
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Checkout repository  
-        uses: actions/checkout@v2
-
-      - name: Deploy via FTP       
-        uses: sebastianpopp/ftp-action@releases/v2
-        with:
-          host: ${{ secrets.FTP_HOST }}      
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          localDir: build/            
-          remoteDir: /www.cortexflow.org    
+      - name: List build directory
+        run: ls -l 
