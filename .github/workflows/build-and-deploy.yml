@@ -46,6 +46,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}  # Use the FTP username from secrets
           password: ${{ secrets.FTP_PASSWORD }}  # Use the FTP password from secrets
           port: ${{ secrets.FTP_PORT }} 
-          localDir: build/  # Specify the local directory to upload (only contents)
+          localDir: build/*  # Specify the local directory to upload (only contents)
           remoteDir: /www.cortexflow.org  # Specify the remote directory to upload files
           dangerousCleanup: true  # Remove remote files that don't exist locally
