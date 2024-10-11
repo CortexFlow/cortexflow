@@ -13,16 +13,16 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-6">
               <h1 className="sitename-footer">CortexFlow</h1>
               <div className="social-icons">
-                <Link to="https://x.com/FlowCortex" aria-label="Twitter/X">
+                <Link to="https://x.com/FlowCortex" aria-label="Twitter/X" title="Vist CortexFlow twitter page">
                   <img src={xLogo} alt="X-logo"className="x-logo" />
                 </Link>
-                <Link to="https://medium.com/@lorenzobradanini964" aria-label="Medium">
+                <Link to="https://medium.com/@lorenzobradanini964" aria-label="Medium" title="Vist CortexFlow Medium page">
                   <FaMedium />
                 </Link>
-                <Link to="https://github.com/orgs/CortexFlow" aria-label="GitHub">
+                <Link to="https://github.com/CortexFlow" aria-label="GitHub" title="Vist CortexFlow Github page">
                   <FaGithub />
                 </Link>
-                <Link to="https://dev.to/cortexflow" aria-label="Dev.to">
+                <Link to="https://dev.to/cortexflow" aria-label="Dev.to" title="Vist CortexFlow Dev.To page">
                   <FaDev />
                 </Link>
               </div>

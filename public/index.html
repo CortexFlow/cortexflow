@@ -14,14 +14,17 @@
     <meta
       name="description"
       content="CortexFlow - The Open-Source IoT simulation framework for big data analytics."
+      data-rh="true"
     />
     <meta
       name="keywords"
-      content="IoT, data simulation, big data, big data analytics, analysis framework,IoT analysis framework,
-    CortexFlow,open source,machine learning,python,metrics,
-    metrics for IoT,tensorflow,database for IoT,simulation modelling,agent based modelling,artificial intelligence for IoT"
+      content="IoT, data simulation, big data, big data analytics, analysis framework, IoT analysis framework,
+    CortexFlow, open source, machine learning, python, metrics,
+    metrics for IoT, tensorflow, database for IoT, simulation modelling, agent based modelling, artificial intelligence for IoT"
     />
     <meta name="author" content="CortexFlow" />
+
+    <!-- Open Graph Meta Tags -->
     <meta
       property="og:title"
       content="CortexFlow - The Open-Source IoT simulation framework"
@@ -30,14 +33,15 @@
       property="og:description"
       content="A cutting-edge IoT simulation framework and big data analysis tool"
     />
-    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
     <meta property="og:url" content="https://www.cortexflow.org/" />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>CortexFlow - The Open-Source IoT Simulation Framework</title>
 
+    <!-- Stylesheets -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -52,9 +56,37 @@
       rel="stylesheet"
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    
+    <!-- Rich Snippet for CortexFlow -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CortexFlow",
+      "description": "The Open-Source IoT simulation framework for big data analytics.",
+      "applicationCategory": "SoftwareApplication",
+      "operatingSystem": "Windows, macOS, Linux",
+      "url": "https://www.cortexflow.org/",
+      "logo": "%PUBLIC_URL%/logo512.png",
+      "author": {
+        "@type": "Organization",
+        "name": "CortexFlow"
+      },
+      "sameAs": [
+        "https://github.com/CortexFlow",
+        "https://x.com/FlowCortex",
+        "https://medium.com/@lorenzobradanini964",
+        "https://dev.to/cortexflow",
+      ],
+    }
+    </script>
   </head>
+  
   <body>
+    <!-- NoScript Message -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Main Application Root -->
     <div id="root"></div>
   </body>
 </html>
