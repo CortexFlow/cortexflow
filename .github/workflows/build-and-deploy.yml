@@ -2,50 +2,55 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [master]
-  workflow_dispatch:
+    branches:
+      - main  # O il branch che desideri monitorare per il deploy
 
 jobs:
   build:
-    name: Build 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Check out the repository
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Imposta la versione di Node.js da usare
+
+      - name: Install dependencies
+        run: npm install  # Installa le dipendenze del progetto
+
+      - name: Build the project
+        run: npm run build  # Costruisce il progetto
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build  # Carica la cartella build come artefatto
+
+  deploy:
+    name: Deploy
+    needs: build  # Aspetta che il job build sia completato
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3  # Check out the repository
 
-      - name: Install dependencies
-        run: npm install --force  # Install dependencies with force
-
-      - name: Build the site
-        run: npm run build  # Run the build command
-
-      - name: Archive production artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: build/*  # Archive only the contents of the build directory
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Checkout repository
-        uses: actions/checkout@v3  # Check out the repository
-
       - name: Download artifact
         uses: actions/download-artifact@v3
-        with: 
+        with:
           name: build
-          path: build  # Download the artifact into the build directory
+          path: build  # Scarica l'artefatto nella cartella build
 
       - name: Sync files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with: 
-          server: ${{ secrets.FTP_HOST }}  # Use the FTP server from secrets
-          username: ${{ secrets.FTP_USERNAME }}  # Use the FTP username from secrets
-          password: ${{ secrets.FTP_PASSWORD }}  # Use the FTP password from secrets
+        with:
+          server: ${{ secrets.FTP_HOST }}  # Usa il server FTP dai secrets
+          username: ${{ secrets.FTP_USERNAME }}  # Usa il nome utente FTP dai secrets
+          password: ${{ secrets.FTP_PASSWORD }}  # Usa la password FTP dai secrets
           port: ${{ secrets.FTP_PORT }} 
-          localDir: build/*  # Specify the local directory to upload (only contents)
-          remoteDir: /www.cortexflow.org  # Specify the remote directory to upload files
-          dangerousCleanup: true  # Remove remote files that don't exist locally
+          local-dir: build  # Specifica la directory locale da caricare
+          server-dir: /www.cortexflow.org  # Specifica la directory remota
+          dangerous-clean-slate: true  # Pulisci la directory remota se necessario
