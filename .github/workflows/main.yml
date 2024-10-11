@@ -18,10 +18,19 @@ jobs:
         run: npm install --force            
 
       - name: Build the site        
-        run: npm run build         
+        run: |
+          npm run build
+          # Check if build directory was created
+          if [ ! -d build ]; then
+            echo "Build directory was not created. Exiting..."
+            exit 1
+          fi
 
-      - name: List build directory
-        run: ls -l build # List files and directories in the build folder
+      - name: List build directory after build
+        run: |
+          echo "Current Directory: $PWD"
+          echo "Listing files in the build directory:"
+          ls -l build # List files and directories in the build folder
 
   deploy:
     name: site deploy via FTP
@@ -33,7 +42,9 @@ jobs:
         uses: actions/checkout@v3  # Use the same version of checkout
 
       - name: List current directory before deploy
-        run: ls -l  # List files in the current directory before deployment
+        run: |
+          echo "Current Directory: $PWD"
+          ls -l  # List files in the current directory before deployment
 
       - name: Check if build directory exists
         run: |
@@ -45,7 +56,9 @@ jobs:
           fi
 
       - name: List contents of build directory before deploy
-        run: ls -l build # List files in the build folder before deployment
+        run: |
+          echo "Contents of build directory:"
+          ls -l build # List files in the build folder before deployment
 
       - name: Deploy via FTP       
         uses: sebastianpopp/ftp-action@releases/v2
