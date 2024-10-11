@@ -1,70 +1,49 @@
-name: cortexflow server deployment
+name: Build and Deploy
 
-on: 
+on:
   push:
-    branches:
-      - master  
+    branches: [master]
+  workflow_dispatch:
 
 jobs:
   build:
-    name: site builder
+    name: Build 
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository  
-        uses: actions/checkout@v3  
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Check out the repository
 
-      - name: Install dependencies  
-        run: npm install --force            
+      - name: Install dependencies
+        run: npm install --force  # Install dependencies with force
 
-      - name: Build the site        
-        run: |
-          npm run build
-          # Check if build directory was created
-          if [ ! -d build ]; then
-            echo "Build directory was not created. Exiting..."
-            exit 1
-          fi
+      - name: Build the site
+        run: npm run build  # Run the build command
 
-      - name: List build directory after build
-        run: |
-          echo "Current Directory: $PWD"
-          echo "Listing files in the build directory:"
-          ls -l build # List files and directories in the build folder
+      - name: Archive production artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build/*  # Archive only the contents of the build directory
 
   deploy:
-    name: site deploy via FTP
-    runs-on: ubuntu-latest
+    name: Deploy
     needs: build
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Check out the repository
 
-    steps:
-      - name: Checkout repository  
-        uses: actions/checkout@v3  # Use the same version of checkout
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with: 
+          name: build
+          path: build  # Download the artifact into the build directory
 
-      - name: List current directory before deploy
-        run: |
-          echo "Current Directory: $PWD"
-          ls -l  # List files in the current directory before deployment
-
-      - name: Check if build directory exists
-        run: |
-          if [ -d build ]; then
-            echo "Build directory exists."
-          else
-            echo "Build directory does NOT exist!"
-            exit 1
-          fi
-
-      - name: List contents of build directory before deploy
-        run: |
-          echo "Contents of build directory:"
-          ls -l build # List files in the build folder before deployment
-
-      - name: Deploy via FTP       
-        uses: sebastianpopp/ftp-action@releases/v2
-        with:
-          host: ${{ secrets.FTP_HOST }}      
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          localDir: build/*  # Use wildcard to upload only the contents of the build directory
-          remoteDir: /www.cortexflow.org     # Remote directory where files will be uploaded
+      - name: Sync files to hosting
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with: 
+          server: ${{ secrets.FTP_HOST }}  # Use the FTP server from secrets
+          username: ${{ secrets.FTP_USERNAME }}  # Use the FTP username from secrets
+          password: ${{ secrets.FTP_PASSWORD }}  # Use the FTP password from secrets
+          localDir: build/  # Specify the local directory to upload (only contents)
+          remoteDir: /www.cortexflow.org  # Specify the remote directory to upload files
