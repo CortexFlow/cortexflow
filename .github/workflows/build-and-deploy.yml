@@ -54,3 +54,4 @@ jobs:
           local-dir: build  # Specifica la directory locale da caricare
           server-dir: /www.cortexflow.org  # Specifica la directory remota
           dangerous-clean-slate: true  # Pulisci la directory remota se necessario
+          dry-run: true
