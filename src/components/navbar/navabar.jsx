@@ -17,7 +17,7 @@ const Homepg = () => {
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
         <Link to="/" className="logo d-flex align-items-center me-auto">
           <img src={logobrain} alt="brain Logo" title="CortexFlow logo" className="brain-logo" />
-          <h1 className="sitename">CortexFlow</h1>
+          <h2 className="sitename">CortexFlow</h2>
         </Link>
         <nav id="navmenu" className="navmenu">
           <ul>

@@ -146,6 +146,12 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
 }
+.sitename{
+  color: var(--heading-color);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
 
 .header .logo {
   line-height: 1;
