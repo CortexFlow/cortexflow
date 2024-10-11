@@ -21,10 +21,7 @@ jobs:
         run: npm run build         
 
       - name: List build directory
-        run: ls -l 
-
-      - name: List contents of build directory
-        run: ls -l build 
+        run: ls -l build # List files and directories in the build folder
 
   deploy:
     name: site deploy via FTP
@@ -33,7 +30,22 @@ jobs:
 
     steps:
       - name: Checkout repository  
-        uses: actions/checkout@v3  
+        uses: actions/checkout@v3  # Use the same version of checkout
+
+      - name: List current directory before deploy
+        run: ls -l  # List files in the current directory before deployment
+
+      - name: Check if build directory exists
+        run: |
+          if [ -d build ]; then
+            echo "Build directory exists."
+          else
+            echo "Build directory does NOT exist!"
+            exit 1
+          fi
+
+      - name: List contents of build directory before deploy
+        run: ls -l build # List files in the build folder before deployment
 
       - name: Deploy via FTP       
         uses: sebastianpopp/ftp-action@releases/v2
@@ -41,5 +53,5 @@ jobs:
           host: ${{ secrets.FTP_HOST }}      
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./build/            
-          remoteDir: /www.cortexflow.org    
+          localDir: build/*  # Use wildcard to upload only the contents of the build directory
+          remoteDir: /www.cortexflow.org     # Remote directory where files will be uploaded
