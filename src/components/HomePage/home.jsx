@@ -116,6 +116,7 @@ const Homepg = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary me-2"
+                      title="Start contributing right now!"
                     >
                       Contributions
                     </a>
@@ -130,6 +131,7 @@ const Homepg = () => {
                       type="button"
                       className="btn btn-info ms-2"
                       onClick={() => setShowInfo(!showInfo)}
+                      title="Contributing guidelines"
                     >
                       <i className="bi bi-info-circle"></i>
                     </button>
@@ -142,6 +144,7 @@ const Homepg = () => {
                       src={githubLogo}
                       alt="GitHub Logo"
                       className="github-logo"
+                      title="view on Github"
                     />
                     <span>Github</span>
                   </a>

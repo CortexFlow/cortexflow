@@ -14,7 +14,7 @@ const ErrorPage = () => {
           <h1 className="typed-text">Sorry we couldn't find that page</h1>
           
           <div className="error-actions">
-            <Link to="/" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary" title="Return to Home Page">
               Return to Home Page
             </Link>
           </div>

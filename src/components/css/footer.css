@@ -1,7 +1,6 @@
 /* FOOTER */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
   --c-dark: #212529;
@@ -10,127 +9,280 @@
   --c-brand-rgb: 78, 87, 212;
   --c-body: white;
   --font-base: "Ubuntu", sans-serif;
-  --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+  --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
   --transition: all 0.5s ease;
   --swiper-navigation-size: 44px;
   --gradient-color-start: rgba(2, 17, 42, 0.173) 41%;
   --gradient-color-end: rgba(11, 32, 79, 0.356) 100%;
-  --gradient-color-start2: rgba(2,17,42,0.17398781446540879) 41%;
-  --gradient-color-end2: rgba(55,101,204,0.3569682151589242) 100%;
-  --gradient-angle:184deg;
-
-
+  --gradient-color-start2: rgba(2, 17, 42, 0.17398781446540879) 41%;
+  --gradient-color-end2: rgba(55, 101, 204, 0.3569682151589242) 100%;
+  --gradient-angle: 184deg;
 }
+
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.footer .footer-newsletter {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--accent-color), transparent 85%);
+  padding: 50px 0;
+}
+
+.footer .footer-newsletter h4 {
+  font-size: 24px;
+}
+
+.footer .footer-newsletter .newsletter-form {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 6px 8px;
+  position: relative;
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.footer .footer-newsletter .newsletter-form:focus-within {
+  border-color: var(--accent-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: 100%;
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
+  color: var(--default-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
+  outline: none;
+}
+
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: -7px -8px -7px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  font-size: 16px;
+  color: var(--accent-color);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 0;
+  color: var(--accent-color);
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-about a {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
 
 footer {
-    padding-top: 120px;
-    font-family: 'Ubuntu';
-  }
-  
-  .footer-top {
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  .footer-bottom {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  footer li,
-  footer p,
-  footer a {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  footer .footer-list {
-    list-style: none;
-    padding: 0;
-    flex-direction: column;
-    margin-top: 10px;
-    font-style: 'Ubuntu';
-    text-align: left;
-    
-  }
-  footer .footer-list-objects{
-      margin-bottom: 5px;
-  }
-  .container-footer {
-    margin-top: 5rem;
-    width: 1200px;
-    /* margin-left: 8rem; */
-    margin-left: auto;
-    margin-right: auto;
+  padding-top: 120px;
+  font-family: "Ubuntu";
 }
-  .container-bottom{
-    width: 1200px;
-    margin-left: 10rem;
-  }
-  
-  footer .footer-line {
-    width: 40px;
-    height: 3px;
-    background-color: var(--c-brand);
-    margin-top: 12px;
-    margin-bottom: 24px;
-    transition: width 0.5s ease-in;
-  }
-  
-  .footer-col-title:hover ~ .footer-line {
-    width: 90px; /* Larghezza desiderata quando si passa sopra .footer-col-title */
-  }
-  .footer-col-title{
-    text-align: left;
-  } 
-  
-  .social-icons a {
-    margin-top: 30px;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 100px;
-  }
-  
-  .social-icons a:hover {
-    background-color: var(--c-brand);
-    color: white;
-  }
-  .footer-list a:hover{
-    color: var(--c-brand);
-  }
-  
-  /*RESPONSIVE DESIGN*/
-  @media (max-width: 1024px) {
-  }
-  .sitename-footer{
-    color: white;
-    font-family: 'Ubuntu';
-  }
-  
 
-  /* Parallax Effect for Footer */
-.parallax-section {
-  background-color: #2c2c2c; /* Colore di sfondo */
-  background-attachment: fixed; /* Effetto parallasse */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 50px 0; /* Regola lo spazio interno */
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer li,
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-list {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  margin-top: 10px;
+  font-style: "Ubuntu";
+  text-align: left;
+}
+footer .footer-list-objects {
+  margin-bottom: 5px;
+}
+.container-footer {
+  margin-top: 5rem;
+  width: 1200px;
+  /* margin-left: 8rem; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-bottom {
+  width: 1200px;
+  margin-left: 10rem;
+}
+
+footer .footer-line {
+  width: 40px;
+  height: 3px;
+  background-color: var(--c-brand);
+  margin-top: 12px;
+  margin-bottom: 24px;
+  transition: width 0.5s ease-in;
+}
+
+.footer-col-title:hover ~ .footer-line {
+  width: 90px; /* Larghezza desiderata quando si passa sopra .footer-col-title */
+}
+.footer-col-title {
+  text-align: left;
+}
+
+.social-icons a {
+  margin-top: 30px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+}
+
+.social-icons a:hover {
+  background-color: var(--c-brand);
+  color: white;
+}
+.footer-list a:hover {
+  color: var(--c-brand);
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1024px) {
+}
+.sitename-footer {
+  color: white;
+  font-family: "Ubuntu";
+}
+
 .row.gy-5 {
   margin-left: auto;
   margin-right: auto;
 }
-.copyright{
-  margin-top:20px;
+.copyright {
+  margin-top: 20px;
   font-size: 10px;
-
 }
-.x-logo{
+.x-logo {
   width: 35%;
   margin-bottom: -0.15rem;
   color: white;
@@ -138,13 +290,13 @@ footer {
 
 /* RESPONSIVE LAYOUT */
 @media (max-width: 768px) {
- .footer-top{
-align-items: center;
- }
+  .footer-top {
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
-  .footer-top{
-align-items: center;
-   }
+  .footer-top {
+    align-items: center;
+  }
 }

@@ -1,83 +1,83 @@
 /* Blog.css */
 body {
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
 header {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #0073e6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .blog-container {
-     max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px; 
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-    font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2.5em;
 }
 
 .blog-entry {
-    background: #fff;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-entry h3 {
-    margin-top: 0;
-    font-size: 1.8em;
-    color: #0073e6;
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #0073e6;
 }
 
 .blog-entry p {
-    color: #666;
-    line-height: 1.6;
+  color: #666;
+  line-height: 1.6;
 }
 
 .blog-entry a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: 500;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .blog-entry a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #0073e6;
-    color: #fff;
-    margin-top: 50px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0073e6;
+  color: #fff;
+  margin-top: 50px;
 }

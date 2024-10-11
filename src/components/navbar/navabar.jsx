@@ -108,6 +108,7 @@ const Homepg = () => {
         <Link
           className="btn-getstarted flex-md-shrink-0"
           to="https://github.com/CortexFlow/CortexBrain"
+          title="Get started with CortexFlow"
         >
           <img src={githubLogo} alt="GitHub Logo" className="github-logo" />
           Get Started

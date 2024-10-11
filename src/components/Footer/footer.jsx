@@ -41,10 +41,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="footer-list-objects">
-                  <Link to="#">Examples</Link>
+                  <Link to="/examples">Examples</Link>
                 </li>
                 <li className="footer-list-objects">
-                  <Link to="#">Use cases</Link>
+                  <Link to="/use-cases">Use cases</Link>
                 </li>
               </ul>
             </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="footer-list-objects">
-                  <Link to="#">Newsletter</Link>
+                  <Link to="/newsletter">Newsletter</Link>
                 </li>
               </ul>
             </div>
