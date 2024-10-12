@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container-footer">
           <div className="row gy-5">
             <div className="col-lg-3 col-sm-6">
-              <h1 className="sitename-footer">CortexFlow</h1>
+              <h2 className="sitename-footer">CortexFlow</h2>
               <div className="social-icons">
                 <Link to="https://x.com/FlowCortex" aria-label="Twitter/X" title="Vist CortexFlow twitter page">
                   <img src={xLogo} alt="X-logo"className="x-logo" />
