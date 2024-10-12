@@ -297,6 +297,9 @@ footer .footer-line {
 }
 
 @media (max-width: 480px) {
+  .container-footer{
+    margin-top: 0rem;
+  }
   .footer-top {
     align-items: center;
   }

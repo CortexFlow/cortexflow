@@ -53,7 +53,10 @@
 /*--------------------------------------------------------------
   # General Styling & Shared Classes
   --------------------------------------------------------------*/
-body {
+.main{
+  max-width: 100%;
+}
+  body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -91,6 +94,7 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  width: 100%;
 }
 .sitename {
   color: var(--heading-color);
@@ -863,13 +867,24 @@ button.btn.btn-info.ms-2 {
 
 @media (max-width: 1200px) {
   a.logo.d-flex.align-items-center.me-auto {
-    margin-left: 4.3rem;
+    margin-left: 1.5rem;
+  }
+  .main{
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 768px) {
   .card h3 {
     font-size: 1.3rem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .main{
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   .card p {
@@ -879,7 +894,7 @@ button.btn.btn-info.ms-2 {
     margin-right: auto;
   }
   a.logo.d-flex.align-items-center.me-auto {
-    margin-left: -0.3rem;
+    margin-left: 1rem;
   }
   a.btn-getstarted.flex-md-shrink-0 {
     margin-right: 29rem;
@@ -887,17 +902,19 @@ button.btn.btn-info.ms-2 {
   a.btn-getstarted.flex-md-shrink-0 {
     display: none;
   }
-  .navmenu {
-    margin-right: 28rem;
-  }
+
 }
 
 @media (max-width: 480px) {
+
   .slider-container {
     padding: 0 10px;
   }
-  .navmenu {
-    margin-right: 50rem;
+  body{
+    overflow-x: hidden;
+  }
+  .main{
+    overflow-x: hidden;
   }
 
   .card h3 {
@@ -911,28 +928,61 @@ button.btn.btn-info.ms-2 {
     margin-right: auto;
   }
   a.logo.d-flex.align-items-center.me-auto {
-    margin-left: -1.3rem;
+    margin-left: 0rem;
   }
   a.btn-getstarted.flex-md-shrink-0 {
     display: none;
   }
-  .navmenu {
-    margin-right: 48rem;
-  }
+
 }
 @media (max-width: 380px) {
-  .navmenu {
-    margin-right: 50rem;
+  .hero{
+    margin-top: 38px;
+  }
+  .img.brain-logo{
+    margin-left: 20px;
+  }
+
+  .main{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
 @media (max-width: 391px) {
-  .navmenu {
-    margin-right: 50rem;
+  .hero{
+    margin-top: 38px;
+  }
+  .img.brain-logo{
+    margin-left: 20px;
+  }
+  .main{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 345px) {
-  .navmenu {
-    margin-right: 52rem;
+  .hero{
+    margin-top: 38px;
   }
+  .img.brain-logo{
+    margin-left: 20px;
+  }
+  .main{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .container-footer{
+    margin-top: 0rem;
+  }
+
 }
