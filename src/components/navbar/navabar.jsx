@@ -32,11 +32,6 @@ const Homepg = () => {
             </li>
             <li>
               <Link to="/blog">
-                <img
-                  src={comingsoon}
-                  alt="coming soon"
-                  className="comingsoon-flag"
-                />
                 Blog
               </Link>
             </li>

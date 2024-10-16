@@ -1,0 +1,74 @@
+.article-body {
+  width: 850px;
+  height: auto;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/*   .article-body {
+    flex: 1;
+    line-height: 1.8;
+  } */
+
+.article-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.article-body p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Stile per le icone di condivisione */
+.share-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: flex-start;
+  /*  margin-left: 150px; */
+  margin-right: -50px;
+  margin-left: 50px;
+}
+
+.share-icons h4 {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #000;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #00acee;
+}
+
+.linkedin {
+  color: #0e76a8;
+}

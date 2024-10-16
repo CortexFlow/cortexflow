@@ -7,6 +7,10 @@ const hostname = "https://www.cortexflow.org/";
 const urls = [
     { url: "/", changefreq: "daily", priority: 1.0 },
     { url: "/blog", changefreq: "daily", priority: 0.8 },
+    {url: "/blog/introducing-cortexflow",changefreq:"daily",priority:1.0},
+/*     {url: "/blog/federated-computational-governance",changefreq:"daily",priority:1.0},
+    {url: "/blog/discovering-lidar",changefreq:"daily",priority:1.0},
+    {url: "/blog/revisiting-the-lambda-architecture",changefreq:"daily",priority:1.0}, */
     { url: "/newsletter", changefreq: "daily", priority: 0.8 },
     { url: "/doc", changefreq: "daily", priority: 0.8 },
     { url: "/examples", changefreq: "daily", priority: 0.8 },
