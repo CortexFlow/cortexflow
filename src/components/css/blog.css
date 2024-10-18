@@ -45,13 +45,10 @@ nav ul li a {
   height: 100%;
   object-fit: cover; /* Assicurati che l'immagine copra l'area */
   z-index: 1; /* Invia l'immagine sullo sfondo */
-  filter: blur(3px);
+  filter: blur(2px);
 }
 
-/*--------------------------------------------------------------
-  # Global Header
-  --------------------------------------------------------------*/
-  .header-blog {
+.header-blog {
     color: var(--default-color);
     background-color: transparent;
     padding: 20px 0;
@@ -170,13 +167,6 @@ h2 {
   text-decoration: underline;
 }
 
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #0073e6;
-  color: #fff;
-  margin-top: 50px;
-}
 
 /* Nuova sezione per la visualizzazione a griglia degli articoli */
 .blog__container {
@@ -279,4 +269,45 @@ footer {
   display: flex;
   gap: 10px;
   font-size: 0.9em;
+}
+
+
+/* CSS per centrare il div centrale */
+.blog-centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra orizzontalmente */
+  justify-content: center; /* Centra verticalmente */
+  height: 100vh; /* Altezza piena della finestra per centrare verticalmente */
+  text-align: center;
+}
+
+/* Bottone posizionato in alto a sinistra */
+.button-home-container {
+  position: absolute;
+  top: 20px; /* Distanza dal bordo superiore */
+  left: 20px; /* Distanza dal bordo sinistro */
+  z-index: 2;
+}
+
+.btn-home-blog {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 150px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.btn-home-blog:hover {
+  border-color: #06f;
+  color: #06f;
 }

@@ -186,11 +186,16 @@
   font-size: 13px;
 }
 
-
 footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0073e6;
+  color: #fff;
+  margin-top: 50px;
   padding-top: 120px;
   font-family: "Ubuntu";
 }
+
 
 .footer-top {
   padding-bottom: 40px;
@@ -265,6 +270,7 @@ footer .footer-line {
 .footer-list a:hover {
   color: var(--c-brand);
 }
+
 
 /*RESPONSIVE DESIGN*/
 @media (max-width: 1024px) {
