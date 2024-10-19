@@ -2,12 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+
+@font-face {
+  font-family: 'Teknaf';
+  src: url('../../../public/fonts/StackedStrong.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Blog.css */
-body {
-  font-family: "Ubuntu", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white;
+:root {
+  --blog-title-fs: 12px;
+  --blog-subtitle-fs: 0.8em;
 }
 
 nav ul {
@@ -45,79 +51,81 @@ nav ul li a {
   height: 100%;
   object-fit: cover; /* Assicurati che l'immagine copra l'area */
   z-index: 1; /* Invia l'immagine sullo sfondo */
-  filter: blur(2px);
 }
 
 .header-blog {
-    color: var(--default-color);
-    background-color: transparent;
-    padding: 20px 0;
-    transition: all 0.5s;
-    z-index: 997;
-    width: 100%;
-    position: absolute;
-  }
+  color: var(--default-color);
+  background-color: transparent;
+  padding: 20px 0;
+  transition: all 0.5s;
+  z-index: 997;
+  width: 100%;
+  position: absolute;
+}
 
-  .header-blog .logo {
-    line-height: 1;
-  }
-  
-  .header-blog .logo img {
-    max-height: 36px;
-    margin-right: 8px;
-  }
-  
-  .header-blog .logo h1 {
-    font-size: 30px;
-    margin: 0;
-    font-weight: 700;
-    color: var(--heading-color);
-  }
-  
-  .header-blog .btn-getstarted,
-  .header-blog .btn-getstarted:focus {
-    color: var(--contrast-color);
-    background: #7d88ec;
-    font-size: 15px;
-    padding: 8px 25px;
-    margin: 0 0 0 30px;
-    border-radius: 4px;
-    transition: 0.3s;
-    font-weight: 500;
-    border-radius: 30px;
-  }
-  
-  .header-blog .btn-getstarted:hover,
-  .header-blog .btn-getstarted:focus:hover {
-    color: var(--contrast-color);
-    background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  }
+.header-blog .logo {
+  line-height: 1;
+}
 
+.header-blog .logo img {
+  max-height: 36px;
+  margin-right: 8px;
+}
+
+.header-blog .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.header-blog .btn-getstarted,
+.header-blog .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: #7d88ec;
+  font-size: 15px;
+  padding: 8px 25px;
+  margin: 0 0 0 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.header-blog .btn-getstarted:hover,
+.header-blog .btn-getstarted:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+/* Titolo e sottotitolo responsivi */
 .blog-title h1 {
-  width: 650px;
+  width: 100%; /* Rendi il titolo responsivo */
+  max-width: 650px;
   position: relative; /* Posiziona il titolo */
   z-index: 2; /* Assicura che il titolo sia visibile */
   color: white; /* Colore del titolo */
   text-align: center;
   font-weight: 600;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'StackedStrong';
   margin: 0; /* Rimuovi margini */
-  font-size: 2.7em; 
+  font-size: var(--blog-title-fs);
 }
 
 .blog-subtitle h2 {
-  width: 500px;
+  width: 90%; /* Rendi il sottotitolo responsivo */
+  max-width: 500px;
   position: relative; /* Posiziona il sottotitolo */
   z-index: 2; /* Assicura che il sottotitolo sia visibile */
   color: white; /* Colore del sottotitolo */
   text-align: center;
   font-weight: 300;
-  font-family: 'Poppins',sans-serif;
-  font-size: 0.8em;
+  font-family: 'StackedStrong';
+  font-size: var(--blog-subtitle-fs);
   margin-top: 30px;
+  margin-left: 10px;
+  font-size: 20px;
 }
-
-
 
 .blog-subtitle {
   font-size: 1.5em; /* Dimensione del sottotitolo */
@@ -167,7 +175,6 @@ h2 {
   text-decoration: underline;
 }
 
-
 /* Nuova sezione per la visualizzazione a griglia degli articoli */
 .blog__container {
   padding: 50px;
@@ -184,7 +191,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .blog__card {
@@ -198,15 +205,15 @@ h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: #4A4A4A;
-  font-family: 'Ubuntu',sans-serif;
+  color: #4a4a4a;
+  font-family: "Ubuntu", sans-serif;
   width: 100%;
   font-weight: 700;
 }
 
 .blog__content p {
   color: #777;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 100;
 }
 
@@ -235,51 +242,16 @@ h2 {
 .author-info {
   display: flex;
   gap: 10px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: -10px;
 }
-
-.article-preview-img {
-  width: 100%;
-  height: 209px;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
-  border-radius: 20px;
-}
-
-.article-hashtag-btn {
-  font-size: 12px;
-  background-color: #f4f4d7;  /* Colore di sfondo del bottone */
-  color: rgb(148, 148, 148);   /* Colore del testo */
-  border: none;                 /* Nessun bordo */
-  padding: 5px 10px;           /* Spaziatura interna */
-  cursor: pointer;      
-  border-radius: 50px;         /* Puntatore a mano per i bottoni */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transizione smooth */
-}
-
-.article-hashtag-btn:hover {
-  background-color: #007bff;  /* Colore quando si passa sopra con il mouse */
-  color: white;
-}
-
-.article-date {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  font-size: 0.9em;
-}
-
 
 /* CSS per centrare il div centrale */
 .blog-centering {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra orizzontalmente */
-  justify-content: center; /* Centra verticalmente */
-  height: 100vh; /* Altezza piena della finestra per centrare verticalmente */
-  text-align: center;
+  flex-direction: column; /* Colonna per impilare gli elementi */
+  align-items: center; /* Centra gli elementi orizzontalmente */
+  text-align: center; /* Allinea il testo al centro */
 }
 
 /* Bottone posizionato in alto a sinistra */
@@ -310,4 +282,9 @@ h2 {
 .btn-home-blog:hover {
   border-color: #06f;
   color: #06f;
+}
+.justify-content-center{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }

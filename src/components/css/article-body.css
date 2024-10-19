@@ -1,27 +1,25 @@
 .article-body {
-  width: 850px;
+  width: 100%; /* Adattare al 100% della larghezza disponibile */
+  max-width: 850px;
   height: auto;
   align-items: center;
   margin-right: auto;
-  margin-left: 100px;
+  margin-left: auto; /* Centrato su schermi più grandi */
   margin-top: 20px;
   font-size: 20px;
 }
+
 .article-container {
   display: flex;
+  flex-direction: column; /* Cambia layout su schermi più piccoli */
   justify-content: space-between;
   padding: 20px;
   max-width: 1000px;
   margin: 20px auto;
 }
 
-/*   .article-body {
-    flex: 1;
-    line-height: 1.8;
-  } */
-
 .article-title {
-  font-size: 2.5rem;
+  font-size: var(--blog-title-fs);
   margin-bottom: 20px;
   color: #333;
   text-align: center;
@@ -37,10 +35,8 @@
 .share-icons {
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: flex-start;
   justify-content: flex-start;
-  /*  margin-left: 150px; */
-  margin-right: -50px;
   margin-left: 50px;
 }
 
@@ -72,3 +68,4 @@
 .linkedin {
   color: #0e76a8;
 }
+

@@ -47,3 +47,54 @@
   border-color: transparent;
   cursor: pointer; /* Cambia il cursore su hover */
 }
+
+
+/* Schermi grandi */
+@media (max-width: 1920px) {
+  .article-body {
+    font-size: 1.1rem;
+    overflow-x: hidden;
+  }
+  div#root {
+    overflow-x: hidden;
+  }
+
+}
+
+/* Schermi medi */
+@media (max-width: 1200px) {
+  .search-bar-blog{
+    margin-right: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .search-bar-blog{
+    display: none;
+  }
+}
+
+/* Tablet e schermi medi */
+@media (max-width: 768px) {
+  .search-bar-blog{
+    display: none;
+  }
+}
+
+/* Smartphone grandi */
+@media (max-width: 480px) {
+  .search-bar-blog{
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .search-bar-blog{
+    display: none;
+  }
+}
+
+@media (max-width: 345px) {
+  .search-bar-blog{
+    display: none;
+  }
+}

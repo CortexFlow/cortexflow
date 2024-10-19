@@ -14,7 +14,7 @@ const Footer = () => {
               <h2 className="sitename-footer">CortexFlow</h2>
               <div className="social-icons">
                 <Link to="https://x.com/FlowCortex" aria-label="Twitter/X" title="Vist CortexFlow twitter page">
-                  <img src={xLogo} alt="X-logo"className="x-logo" />
+                  <img src={xLogo} alt="X-logo"className="x-logo" title="X/twitter logo" />
                 </Link>
                 <Link to="https://medium.com/@lorenzobradanini964" aria-label="Medium" title="Vist CortexFlow Medium page">
                   <FaMedium />
