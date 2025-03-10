@@ -48,18 +48,14 @@ const Homepg = () => {
             <li className="dropdown">
               <Link to="/">
                 {" "}
-                <img
-                  src={comingsoon}
-                  alt="coming soon"
-                  className="comingsoon-flag"
-                />
                 <span>Documentation</span>{" "}
                 <i className="bi bi-chevron-down toggle-dropdown"></i>
               </Link>
               <ul>
                 {
+                  // this must be an href
                   <li>
-                    <Link to="/doc">Documentation 1</Link>
+                    <a href="/doc/">Documentation 1</a>
                   </li>
                   /* <li className="dropdown">
                   <Link to="#">

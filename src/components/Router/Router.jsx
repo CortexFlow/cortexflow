@@ -25,7 +25,7 @@ const router = createBrowserRouter(
     },
     /* ------------------------------------------------------------------------------------------------------ */    
     /* Blog pages link */
-    {
+    /* {
       path: "/blog/introducing-cortexflow",
       element: <Article1 />,
       errorElement: <ErrorPage />
@@ -44,7 +44,7 @@ const router = createBrowserRouter(
       path: "/blog/revisiting-the-lambda-architecture",
       element: <Article4 />,
       errorElement: <ErrorPage />
-    },
+    }, */
 
     /* ------------------------------------------------------------------------------------------------------ */   
     /* NewsLetter */
@@ -53,11 +53,11 @@ const router = createBrowserRouter(
       element: <InProgress />,
       errorElement: <ErrorPage />,
     },
-    {
+    /* {
       path: "/doc",
       element: <InProgress />,
       errorElement: <ErrorPage />,
-    },
+    }, */
     {
       path: "/examples",
       element: <InProgress />,
