@@ -16,7 +16,12 @@ const Homepg = () => {
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
         <Link to="/" className="logo d-flex align-items-center me-auto">
-          <img src={logobrain} alt="brain Logo" title="CortexFlow logo" className="brain-logo" />
+          <img
+            src={logobrain}
+            alt="brain Logo"
+            title="CortexFlow logo"
+            className="brain-logo"
+          />
           <h2 className="sitename">CortexFlow</h2>
         </Link>
         <nav id="navmenu" className="navmenu">
@@ -30,11 +35,9 @@ const Homepg = () => {
             <li>
               <a href="#about">About</a>
             </li>
-            <li>
-              <Link to="/blog">
-                Blog
-              </Link>
-            </li>
+            {/* <li>
+              <Link to="/blog">Blog</Link>
+            </li> */}
             <li>
               <Link to="/newsletter">
                 <img
@@ -46,52 +49,14 @@ const Homepg = () => {
               </Link>
             </li>
             <li className="dropdown">
-              <Link to="/">
+              <a href="/doc/"> {/* this must be a href */}
                 {" "}
                 <span>Documentation</span>{" "}
-                <i className="bi bi-chevron-down toggle-dropdown"></i>
-              </Link>
-              <ul>
-                {
-                  // this must be an href
-                  <li>
-                    <a href="/doc/">Documentation 1</a>
-                  </li>
-                  /* <li className="dropdown">
-                  <Link to="#">
-                    <span>Deep Documentation</span>{" "}
-                    <i className="bi bi-chevron-down toggle-dropdown"></i>
-                  </Link>
-                  <ul>
-                    <li>
-                      <Link to="#">Deep Documentation 1</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Deep Documentation 2</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Deep Documentation 3</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Deep Documentation 4</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Deep Documentation 5</Link>
-                    </li>
-                  </ul>
-                </li> */
-                }
-                {/* <li>
-                  <Link to="#">Documentation 2</Link>
-                </li>
-                <li>
-                  <Link to="#">Documentation 3</Link>
-                </li>
-                <li>
-                  <Link to="#">Documentation 4</Link>
-                </li> */}
-              </ul>
+                <i className="bi toggle-dropdown"></i>
+              </a>
             </li>
+
+
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

@@ -18,11 +18,11 @@ const router = createBrowserRouter(
       element: <HomePage />,
       errorElement: <ErrorPage />,
     },
-    {
+    /* {
       path: "/blog",
       element: <BlogPage />,
       errorElement: <ErrorPage />,
-    },
+    }, */
     /* ------------------------------------------------------------------------------------------------------ */    
     /* Blog pages link */
     /* {
