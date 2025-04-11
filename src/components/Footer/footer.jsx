@@ -36,15 +36,15 @@ const Footer = () => {
               <div className="footer-line"></div>
               <ul className="footer-list">
                 <li className="footer-list-objects">
-                  <Link to="https://github.com/CortexFlow/CortexBrain/blob/main/doc.md">
+                  <a href ="/doc/">
                     Documentation
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer-list-objects">
-                  <Link to="/examples">Examples</Link>
+                  <a href="/doc/">Examples</a>
                 </li>
                 <li className="footer-list-objects">
-                  <Link to="/use-cases">Use cases</Link>
+                  <a href ="/doc/">Use cases</a>
                 </li>
               </ul>
             </div>
@@ -62,17 +62,17 @@ const Footer = () => {
                     Pull Requests
                   </Link>
                 </li>
-                <li className="footer-list-objects">
+                {/* <li className="footer-list-objects">
                   <Link to="/blog">Blog</Link>
-                </li>
+                </li> */}
                 <li className="footer-list-objects">
                   <Link to="https://github.com/CortexFlow/CortexBrain/discussions">
                     Discussions
                   </Link>
                 </li>
-                <li className="footer-list-objects">
+                {/* <li className="footer-list-objects">
                   <Link to="/newsletter">Newsletter</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="col-lg-3 col-sm-6">
