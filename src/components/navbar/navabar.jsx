@@ -9,7 +9,6 @@ import "../css/homepage.css";
 import githubLogo from "../assets/img/github.png";
 
 import logobrain from "../assets/img/logo-brain.png";
-import comingsoon from "../assets/img/coming-soon2.png";
 
 const Homepg = () => {
   return (
@@ -39,24 +38,19 @@ const Homepg = () => {
               <Link to="/blog">Blog</Link>
             </li> */}
             <li>
-              <Link to="/newsletter">
-                <img
-                  src={comingsoon}
-                  alt="coming soon"
-                  className="comingsoon-flag"
-                />
-                Newsletter
-              </Link>
-            </li>
-            <li className="dropdown">
-              <a href="/doc/"> {/* this must be a href */}
+              <a href="/blog/">
                 {" "}
-                <span>Documentation</span>{" "}
+                {/* this must be a href */} <span>Blog</span>{" "}
                 <i className="bi toggle-dropdown"></i>
               </a>
             </li>
-
-
+            <li className="dropdown">
+              <a href="/doc/">
+                {" "}
+                {/* this must be a href */} <span>Documentation</span>{" "}
+                <i className="bi toggle-dropdown"></i>
+              </a>
+            </li>
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

@@ -5,16 +5,12 @@ const path = require("path");
 // Define the hostname and URLs for the sitemap file
 const hostname = "https://www.cortexflow.org/";
 const urls = [
-    { url: "/", changefreq: "daily", priority: 1.0 },
-    { url: "/blog", changefreq: "daily", priority: 0.8 },
-    {url: "/blog/introducing-cortexflow",changefreq:"daily",priority:1.0},
-/*     {url: "/blog/federated-computational-governance",changefreq:"daily",priority:1.0},
-    {url: "/blog/discovering-lidar",changefreq:"daily",priority:1.0},
-    {url: "/blog/revisiting-the-lambda-architecture",changefreq:"daily",priority:1.0}, */
-    { url: "/newsletter", changefreq: "daily", priority: 0.8 },
-    { url: "/doc", changefreq: "daily", priority: 0.8 },
-    { url: "/examples", changefreq: "daily", priority: 0.8 },
-    { url: "/use-cases", changefreq: "daily", priority: 0.8 },
+  { url: "/", changefreq: "daily", priority: 1.0 },
+  { url: "/blog", changefreq: "daily", priority: 0.95 },
+  { url: "/newsletter", changefreq: "daily", priority: 0.8 },
+  { url: "/doc", changefreq: "daily", priority: 0.8 },
+  { url: "/examples", changefreq: "daily", priority: 0.8 },
+  { url: "/use-cases", changefreq: "daily", priority: 0.8 },
 ];
 
 // Create the sitemap instance
@@ -24,8 +20,8 @@ const sitemapInstance = sitemap.createSitemap({
 });
 
 // Define the path for the directory and the file
-const directoryPath = path.join(__dirname, '../public');
-const filePath = path.join(directoryPath, 'sitemap.xml');
+const directoryPath = path.join(__dirname, "../public");
+const filePath = path.join(directoryPath, "sitemap.xml");
 
 // Check if the 'public' directory exists, if not, create it
 if (!fs.existsSync(directoryPath)) {
