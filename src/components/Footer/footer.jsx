@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/footer.css";
 import { Link } from "react-router-dom";
-import { FaMedium, FaGithub, FaDev } from 'react-icons/fa';
+import { FaMedium, FaGithub, FaDev } from "react-icons/fa";
 import xLogo from "../assets/img/x-logo.png";
 
 const Footer = () => {
@@ -13,21 +13,42 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-6">
               <h2 className="sitename-footer">CortexFlow</h2>
               <div className="social-icons">
-                <Link to="https://x.com/FlowCortex" aria-label="Twitter/X" title="Vist CortexFlow twitter page">
-                  <img src={xLogo} alt="X-logo"className="x-logo" title="X/twitter logo" />
+                <Link
+                  to="https://x.com/FlowCortex"
+                  aria-label="Twitter/X"
+                  title="Vist CortexFlow twitter page"
+                >
+                  <img
+                    src={xLogo}
+                    alt="X-logo"
+                    className="x-logo"
+                    title="X/twitter logo"
+                  />
                 </Link>
-                <Link to="https://medium.com/@lorenzobradanini964" aria-label="Medium" title="Vist CortexFlow Medium page">
+                <Link
+                  to="https://medium.com/@lorenzobradanini964"
+                  aria-label="Medium"
+                  title="Vist CortexFlow Medium page"
+                >
                   <FaMedium />
                 </Link>
-                <Link to="https://github.com/CortexFlow" aria-label="GitHub" title="Vist CortexFlow Github page">
+                <Link
+                  to="https://github.com/CortexFlow"
+                  aria-label="GitHub"
+                  title="Vist CortexFlow Github page"
+                >
                   <FaGithub />
                 </Link>
-                <Link to="https://dev.to/cortexflow" aria-label="Dev.to" title="Vist CortexFlow Dev.To page">
+                <Link
+                  to="https://dev.to/cortexflow"
+                  aria-label="Dev.to"
+                  title="Vist CortexFlow Dev.To page"
+                >
                   <FaDev />
                 </Link>
               </div>
               <p className="mb-0 copyright">
-                &copy; 2024 CortexFlow. All rights reserved.
+                &copy; 2025 CortexFlow. All rights reserved.
               </p>
             </div>
 
@@ -36,15 +57,13 @@ const Footer = () => {
               <div className="footer-line"></div>
               <ul className="footer-list">
                 <li className="footer-list-objects">
-                  <a href ="/doc/">
-                    Documentation
-                  </a>
+                  <a href="/doc/">Documentation</a>
                 </li>
                 <li className="footer-list-objects">
                   <a href="/doc/">Examples</a>
                 </li>
                 <li className="footer-list-objects">
-                  <a href ="/doc/">Use cases</a>
+                  <a href="/doc/">Use cases</a>
                 </li>
               </ul>
             </div>
@@ -62,9 +81,9 @@ const Footer = () => {
                     Pull Requests
                   </Link>
                 </li>
-                {/* <li className="footer-list-objects">
-                  <Link to="/blog">Blog</Link>
-                </li> */}
+                <li className="footer-list-objects">
+                  <a href="/blog/">Blog</a>
+                </li>
                 <li className="footer-list-objects">
                   <Link to="https://github.com/CortexFlow/CortexBrain/discussions">
                     Discussions
