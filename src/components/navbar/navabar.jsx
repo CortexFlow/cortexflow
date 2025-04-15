@@ -34,11 +34,8 @@ const Homepg = () => {
             <li>
               <a href="#about">About</a>
             </li>
-            {/* <li>
-              <Link to="/blog">Blog</Link>
-            </li> */}
             <li>
-              <a href="/blog/">
+              <a href="https://blog.cortexflow.org/">
                 {" "}
                 {/* this must be a href */} <span>Blog</span>{" "}
                 <i className="bi toggle-dropdown"></i>
