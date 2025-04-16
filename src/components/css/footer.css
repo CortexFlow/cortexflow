@@ -1,6 +1,5 @@
 /* FOOTER */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --c-dark: #212529;
@@ -8,7 +7,7 @@
   --c-brand-light: #6970dd;
   --c-brand-rgb: 78, 87, 212;
   --c-body: white;
-  --font-base: "Ubuntu", sans-serif;
+  --font-base: "Poppins";
   --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
   --transition: all 0.5s ease;
   --swiper-navigation-size: 44px;
@@ -196,7 +195,6 @@ footer {
   font-family: "Ubuntu";
 }
 
-
 .footer-top {
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -218,7 +216,7 @@ footer .footer-list {
   padding: 0;
   flex-direction: column;
   margin-top: 10px;
-  font-style: "Ubuntu";
+  font-style: "Poppins";
   text-align: left;
 }
 footer .footer-list-objects {
@@ -271,7 +269,6 @@ footer .footer-line {
   color: var(--c-brand);
 }
 
-
 /*RESPONSIVE DESIGN*/
 @media (max-width: 1024px) {
 }
@@ -303,7 +300,7 @@ footer .footer-line {
 }
 
 @media (max-width: 480px) {
-  .container-footer{
+  .container-footer {
     margin-top: 0rem;
   }
   .footer-top {
