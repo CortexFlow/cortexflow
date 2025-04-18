@@ -8,30 +8,15 @@ import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.min.css";
 import "../css/homepage.css";
 import "../css/deco.css";
-import AOS from "aos"; // Importa AOS
 import { Helmet } from "react-helmet";
-
-import githubLogo from "../assets/img/github.png";
 
 import Character1 from "../Characters/HeroCharacter1";
 import Character3 from "../Characters/HeroCharacter3";
 
 import Footer from "../Footer/footer";
 import Navbar from "../navbar/navabar";
-import Typed from "typed.js"; // Importa Typed.js
-
-import Slider from "../Pages/slider";
 
 const Homepg = () => {
-  const components = [
-    <div key="1">
-      <Character1 />
-    </div>,
-    <div key="3">
-      <Character3 />
-    </div>,
-  ];
-
   return (
     <>
       <Helmet>
@@ -58,22 +43,65 @@ const Homepg = () => {
           <div className="corner is--right-bottom"></div>
         </div>
         <div className="deco-h-lines">
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '250px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '500px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '750px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '1000px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '1250px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '1500px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '1750px' }}></div>
-          <div className="decorative-line vertical-line" style={{ top: '0px', left: '2000px' }}></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "250px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "500px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "750px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "1000px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "1250px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "1500px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "1750px" }}
+          ></div>
+          <div
+            className="decorative-line vertical-line"
+            style={{ top: "0px", left: "2000px" }}
+          ></div>
         </div>
         <div className="deco-plus">
-          <div className="decorative-plus" style={{ top: '200px', left: '500px' }}>+</div>
-          <div className="decorative-plus-medium" style={{ top: '200px', left: '1400px' }}>+</div>
-        
-          <div className="decorative-plus-back" style={{ top: '50px', left: '923px' }}>+</div>
-          <div className="decorative-plus" style={{ top: '650px', left: '802px' }}>+</div>
-        
+          <div
+            className="decorative-plus"
+            style={{ top: "200px", left: "500px" }}
+          >
+            +
+          </div>
+          <div
+            className="decorative-plus-medium"
+            style={{ top: "200px", left: "1600px" }}
+          >
+            +
+          </div>
+
+          <div
+            className="decorative-plus-back"
+            style={{ top: "50px", left: "923px" }}
+          >
+            +
+          </div>
+          <div
+            className="decorative-plus"
+            style={{ top: "650px", left: "802px" }}
+          >
+            +
+          </div>
         </div>
 
         {/* Wrapper per la spline e il testo */}
@@ -81,11 +109,19 @@ const Homepg = () => {
           {/* Testo di prova a sinistra */}
           <div className="left-side-text">
             <h1>CortexFlow</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ipsa, quibusdam aspernatur odit neque a esse, eveniet, soluta vero facilis vel itaque amet. Quae consequatur repudiandae ut distinctio ducimus perspiciatis!</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Inventore ipsa, quibusdam aspernatur odit neque a esse, eveniet,
+              soluta vero facilis vel itaque amet. Quae consequatur repudiandae
+              ut distinctio ducimus perspiciatis!
+            </p>
           </div>
 
           {/* Componente Spline */}
-          <Spline className="spline-wrapper" scene="https://prod.spline.design/nTebIFs-JJgnfeDN/scene.splinecode" />
+          <Spline
+            className="spline-wrapper"
+            scene="https://prod.spline.design/nTebIFs-JJgnfeDN/scene.splinecode"
+          />
         </div>
 
         <Footer />
