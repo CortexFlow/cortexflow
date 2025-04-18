@@ -1,0 +1,164 @@
+.content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Allinea il contenuto ai lati opposti */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px;
+    position: relative;
+    background: transparent;
+    height: 100vh; /* Imposta un'altezza di visualizzazione completa */
+  }
+.deco-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  .is--left-top {
+    top: 30px;
+    left: 30px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .is--right-top {
+    top: 30px;
+    right: 30px;
+    border-left: none;
+    border-bottom: none;
+  }
+  
+  .is--left-bottom {
+    bottom: 30px;
+    left: 30px;
+    border-right: none;
+    border-top: none;
+  }
+  
+  .is--right-bottom {
+    bottom: 30px;
+    right: 30px;
+    border-left: none;
+    border-top: none;
+  }
+  
+  .decorative-line {
+    position: absolute;
+    background-color: #999;
+    opacity: 0.5;
+    z-index: 4;
+    pointer-events: none;
+  }
+  
+  .horizontal-line {
+    height: 1px;
+    width: 100px;
+  }
+  
+  .vertical-line {
+    width: 0.5px;
+    height: 1000px;
+  }
+  .deco-h-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 70%;
+  }
+  .spline-wrapper {
+    width: 70%; /* Imposta la larghezza della spline */
+    height: 100%; /* Assicura che la spline occupi tutto lo spazio disponibile */
+    max-width: 1200px; /* Imposta una larghezza massima per la spline */
+  }
+  .deco-plus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .decorative-plus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    font-weight: normal;
+    font-family: 'Preospe';
+    color: #999;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .decorative-plus-back {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Preospe';
+    color: #999;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .decorative-plus-medium {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Preospe';
+    color: #999;
+    z-index: 5;
+    pointer-events: none;
+    animation: spin 2s linear infinite;
+  }
+
+  .left-side-text {
+    max-width: 600px; /* Limita la larghezza del testo */
+    color: black; /* Colore del testo */
+    padding: 20px;
+    background: transparent;
+    z-index: 1;
+  }
+  
+  .left-side-text h1 {
+    font-size: 150px;
+    margin-bottom: 10px;
+    font-family: 'Preospe';
+    color: #1c1c1c;
+    font-style: bold;
+  }
+  
+  .left-side-text p {
+    font-size: 20px;
+    
+    line-height: 1.5;
+    font-family: 'Preospe';
+  }
+
+  /* Spin animation */
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

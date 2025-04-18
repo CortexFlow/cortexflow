@@ -1,18 +1,22 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@font-face {
+  font-family: 'Preospe';
+   src: url("../../../public/fonts/NeueHaasGrotesk/NHaasGroteskTXPro-55Rg.ttf") format('opentype'); 
+/*     src:url("../../../public/fonts/Gridular-Regular.ttf") format('opentype'); */
+  font-weight: bold;
+  font-style: normal ;
+}
+
 
 :root {
-  --default-font: "Ubuntu", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu", sans-serif;
-  --nav-font: "Ubuntu", sans-serif;
+  --default-font: "Preospe", system-ui, -apple-system, "Preospe";
+  --heading-font: "Preospe";
+  --nav-font: "Preospe";
 }
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #e6e6e6; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #433878; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #4154f1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -22,7 +26,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #012970; /* The default color of the main navmenu links */
+  --nav-color: white; /* The default color of the main navmenu links */
   --nav-hover-color: #4154f1; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -90,12 +94,23 @@ h6 {
   --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background: rgba(151, 139, 199, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
-  width: 100%;
+  width: 40%;
+  height: 80px;
+  left: 30%;
+  right: 30%;
+  border-radius: 10px;
+  top: 88%;
 }
+
 .sitename {
   color: var(--heading-color);
   font-size: 30px;
@@ -123,7 +138,7 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: #7d88ec;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 4px;
@@ -144,6 +159,7 @@ h6 {
   display: inline-flex;
   margin-right: 0.6rem;
   margin-bottom: 3px;
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -203,7 +219,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 12px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: var(--nav-font);
     font-weight: 500;
     display: flex;
@@ -657,7 +673,7 @@ section,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  font-family: "Ubuntu";
+  font-family: "Preospe";
 }
 
 .hero p {
@@ -671,7 +687,7 @@ section,
 .hero .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-family: "Ubuntu";
+  font-family: "Preospe";
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
