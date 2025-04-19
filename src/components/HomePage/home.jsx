@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-
+import React, { useEffect, useContext } from "react";
 import Spline from "@splinetool/react-spline";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,13 +9,17 @@ import "../css/homepage.css";
 import "../css/deco.css";
 import { Helmet } from "react-helmet";
 
-import Character1 from "../Characters/HeroCharacter1";
-import Character3 from "../Characters/HeroCharacter3";
-
 import Footer from "../Footer/footer";
 import Navbar from "../navbar/navabar";
+import { SplineContext } from "../Context/SplineContext"; // Importa il context
 
 const Homepg = () => {
+  const { splineModel } = useContext(SplineContext); // Usa il context per accedere al modello precaricato
+
+  const onSplineLoad = (spline) => {
+    console.log("Spline caricato nella homepage");
+  };
+
   return (
     <>
       <Helmet>
@@ -117,10 +120,13 @@ const Homepg = () => {
             </p>
           </div>
 
-          {/* Componente Spline */}
+          {/* Componente Spline con il modello precaricato */}
           <Spline
             className="spline-wrapper"
             scene="https://prod.spline.design/nTebIFs-JJgnfeDN/scene.splinecode"
+            onLoad={onSplineLoad}
+            // Usa il modello precaricato se disponibile
+            {...(splineModel && { preloadedmodel: splineModel })}
           />
         </div>
 

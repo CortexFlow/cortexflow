@@ -1,0 +1,27 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.counter {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 35%;
+  bottom: 30%;
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
+  padding: 0.2em 0.4em;
+  font-size: 20vh;
+  font-family: "Preospe";
+  color: #e6e6e6;
+}
+.bar {
+  width: 10vw;
+  height: 105vh;
+  background: #1c1c1c;
+}

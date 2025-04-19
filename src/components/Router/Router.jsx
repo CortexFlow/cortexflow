@@ -1,12 +1,12 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "../HomePage/home";
+import App from "../../App";
 import ErrorPage from "../Pages/ErrorPage";
 import InProgress from "../Pages/InProgress";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: <App />,
     errorElement: <ErrorPage />,
   },
   /* NewsLetter */
