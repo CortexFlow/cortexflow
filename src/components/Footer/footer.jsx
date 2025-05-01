@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="footer-line"></div>
               <ul className="footer-list">
                 <li className="footer-list-objects">
-                  <a href="https://blog.cortexflow.org/">Documentation</a>
+                  <a href="https://docs.cortexflow.org/">Documentation</a>
                 </li>
                 <li className="footer-list-objects">
                   <a href="https://blog.cortexflow.org/">Examples</a>
