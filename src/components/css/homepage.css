@@ -53,10 +53,10 @@
 /*--------------------------------------------------------------
   # General Styling & Shared Classes
   --------------------------------------------------------------*/
-.main{
+.main {
   max-width: 100%;
 }
-  body {
+body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
@@ -869,7 +869,7 @@ button.btn.btn-info.ms-2 {
   a.logo.d-flex.align-items-center.me-auto {
     margin-left: 1.5rem;
   }
-  .main{
+  .main {
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -879,10 +879,10 @@ button.btn.btn-info.ms-2 {
   .card h3 {
     font-size: 1.3rem;
   }
-  body{
+  body {
     overflow-x: hidden;
   }
-  .main{
+  .main {
     overflow-x: hidden;
     max-width: 100%;
   }
@@ -902,18 +902,16 @@ button.btn.btn-info.ms-2 {
   a.btn-getstarted.flex-md-shrink-0 {
     display: none;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .slider-container {
     padding: 0 10px;
   }
-  body{
+  body {
     overflow-x: hidden;
   }
-  .main{
+  .main {
     overflow-x: hidden;
   }
 
@@ -933,56 +931,54 @@ button.btn.btn-info.ms-2 {
   a.btn-getstarted.flex-md-shrink-0 {
     display: none;
   }
-
 }
 @media (max-width: 380px) {
-  .hero{
+  .hero {
     margin-top: 38px;
   }
-  .img.brain-logo{
+  .img.brain-logo {
     margin-left: 20px;
   }
 
-  .main{
+  .main {
     overflow-x: hidden;
     max-width: 100%;
   }
-  body{
+  body {
     overflow-x: hidden;
   }
 }
 @media (max-width: 391px) {
-  .hero{
+  .hero {
     margin-top: 38px;
   }
-  .img.brain-logo{
+  .img.brain-logo {
     margin-left: 20px;
   }
-  .main{
+  .main {
     overflow-x: hidden;
     max-width: 100%;
   }
-  body{
+  body {
     overflow-x: hidden;
   }
 }
 
 @media (max-width: 345px) {
-  .hero{
+  .hero {
     margin-top: 38px;
   }
-  .img.brain-logo{
+  .img.brain-logo {
     margin-left: 20px;
   }
-  .main{
+  .main {
     max-width: 100%;
     overflow-x: hidden;
   }
-  body{
+  body {
     overflow-x: hidden;
   }
-  .container-footer{
+  .container-footer {
     margin-top: 0rem;
   }
-
 }
