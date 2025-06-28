@@ -1,6 +1,6 @@
 name: Update documentation
 
-on: 
+on:
   push:
     branches: [master]
 
@@ -14,14 +14,13 @@ jobs:
       - name: Setup Nodejs
         uses: actions/setup-node@v3
         with:
-          node-version: '20.15.0'
-
+          node-version: "20.15.0"
 
       - name: Install dependencies
         run: npm install --force
 
       - name: Build site
-        run: npm run build
+        run: npm run build-prod
 
       - name: Deploy to site host
         uses: airvzxf/ftp-deployment-action@latest
@@ -29,5 +28,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: './build'
+          local_dir: "./build"
           remote_dir: ${{ secrets.CF_SITE_DIR_1 }}
