@@ -39,9 +39,7 @@
     "tailwind-dev": "tailwindcss -i ./src/index.css -o ./public/style.css --watch",
     "tailwind-prod": "tailwindcss -i ./src/index.css -o ./public/style.css --minify",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "GENERATE_SOURCEMAP=false npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
