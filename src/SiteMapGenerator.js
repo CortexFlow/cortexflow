@@ -4,14 +4,7 @@ const path = require("path");
 
 // Define the hostname and URLs for the sitemap file
 const hostname = "https://www.cortexflow.org/";
-const urls = [
-  { url: "/", changefreq: "daily", priority: 1.0 },
-  { url: "/blog", changefreq: "daily", priority: 0.95 },
-  { url: "/newsletter", changefreq: "daily", priority: 0.8 },
-  { url: "/doc", changefreq: "daily", priority: 0.8 },
-  { url: "/examples", changefreq: "daily", priority: 0.8 },
-  { url: "/use-cases", changefreq: "daily", priority: 0.8 },
-];
+const urls = [{ url: "/", changefreq: "daily", priority: 1.0 }];
 
 // Create the sitemap instance
 const sitemapInstance = sitemap.createSitemap({
