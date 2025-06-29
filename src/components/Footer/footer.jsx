@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaMedium, FaGithub, FaDev } from "react-icons/fa";
+import { FaMedium, FaDev } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <Link to="https://www.cortexflow.org/" class="flex items-center">
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span class="font-poppins font-medium self-center text-2xl tracking-wide whitespace-nowrap dark:text-white">
                 CortexFlow
               </span>
             </Link>
