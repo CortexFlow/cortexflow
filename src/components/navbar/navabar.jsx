@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import githubLogo from "../assets/img/github.png";
+import Announcements from "../HomePage/Announcements";
 
 const Homepg = () => {
   return (
     <nav className="px-6 w-full bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 shadow-lg fixed z-50">
+      <Announcements />
       <div
         className="max-w-7xl mx-auto md:px-6 py-4 flex items-center justify-between
       sm:px-3"
@@ -43,13 +45,17 @@ const Homepg = () => {
               Blog
             </a>
           </li>
-          <li>
+          <li className="flex">
             <a
               href="https://docs.cortexflow.org/"
               className="hover:text-blue-500 transition duration-300"
             >
               Documentation
             </a>
+            <span class="relative flex size-1 mt-2 ml-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex size-1 rounded-full bg-sky-500"></span>
+            </span>
           </li>
         </ul>
 
