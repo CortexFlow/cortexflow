@@ -4,13 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.min.css";
-import "../css/homepage.css";
 import AOS from "aos"; // Importa AOS
 
 import githubLogo from "../assets/img/github.png";
 
 import Character1 from "../Characters/HeroCharacter1";
-import Character3 from "../Characters/HeroCharacter3";
 
 import Footer from "../Footer/footer";
 import Navbar from "../navbar/navabar";
@@ -18,6 +16,8 @@ import MetadataHelmet from "./metadata_helmet";
 import Typed from "typed.js"; // Importa Typed.js
 import KeyFeatures from "./key_features";
 import TechFeatures from "./technology_features";
+import FeatureShow from "./FeatureShow";
+import HandsOn from "./hands_on";
 
 const Homepg = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
@@ -28,8 +28,8 @@ const Homepg = () => {
     <div key="1">
       <Character1 />
     </div>,
-    <div key="3">
-      <Character3 />
+    <div key="1">
+      <Character1 />
     </div>,
   ];
 
@@ -76,18 +76,32 @@ const Homepg = () => {
       <Navbar />
       <main className="main">
         <section id="hero" className="mt-30">
-          <div className="container">
-            <div className="row gy-4">
+          <div className="container max-h-[1000px] mb-[140px] mx-auto mt-8 p-3.5 lg:max-w-6xl md:max-w-3xl">
+            <div className="row gy-4 py-10 ">
               <div class="mt-24 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
                 <h1
-                  class="text-3xl font-medium mt-30 font-poppins
+                  class="mb-3 lg:text-6xl font-medium mt-30 font-poppins bg-gradient-to-r
+                   from-blue-700 via-yellow-500 to-orange-600 inline-block 
+                   text-transparent bg-clip-text
+                   md:max-w-[600px]
+                   sm:max-w-[400px] sm:text-3xl
                 "
                 >
-                  CortexFlow: Open-source Container Networking Infrastructure
-                  and monitoring Platform
+                  CortexFlow
+                </h1>
+                <h1
+                  class="lg:text-4xl font-medium mt-30 font-poppins bg-gradient-to-r
+                   from-blue-700 via-yellow-500 to-orange-600 inline-block 
+                   text-transparent bg-clip-text
+                   md:max-w-[600px]
+                   sm:max-w-[400px] sm:text-3xl
+                "
+                >
+                  Open-source Container Networking Infrastructure and Monitoring
+                  Platform
                 </h1>
                 <p
-                  class="mb-3 mt-6"
+                  class="mb-3 mt-10 font-poppins text-xl"
                   data-aos="fade-up"
                   data-aos-delay="100"
                   ref={typedRef} // Imposta la referenza qui
@@ -95,7 +109,7 @@ const Homepg = () => {
                   {/* Typed.js scriverà qui */}
                 </p>
                 <div
-                  className="d-flex flex-column flex-md-row align-items-center"
+                  className="mt-5 d-flex flex-column flex-md-row align-items-center "
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -104,18 +118,12 @@ const Homepg = () => {
                       href="https://github.com/CortexFlow/CortexBrain"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-primary me-2"
+                      className="font-poppins hidden md:inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow transition duration-300"
                       title="Start contributing right now!"
                     >
-                      Contributions
+                      Contribute
                     </a>
 
-                    {/*                     <input
-                      type="email"
-                      className="form-control"
-                      placeholder="youremail@example.com"
-                      required
-                    /> */}
                     <button
                       type="button"
                       className="btn btn-info ms-2"
@@ -127,7 +135,7 @@ const Homepg = () => {
                   </form>
                   <a
                     href="https://github.com/CortexFlow/CortexBrain"
-                    className="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"
+                    className="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0 hover:text-blue-500"
                   >
                     <img
                       src={githubLogo}
@@ -139,7 +147,10 @@ const Homepg = () => {
                   </a>
                 </div>
                 {showInfo && (
-                  <div className="alert alert-info mt-3" role="alert">
+                  <div
+                    className="font-poppins max-w-[600px] alert alert-info mt-3"
+                    role="alert"
+                  >
                     If you would like to contribute on a new feature, we ask you
                     to open a discussion before submitting a Pull Request. This
                     is to ensure that all new features align with the project's
@@ -158,7 +169,7 @@ const Homepg = () => {
                 )}
               </div>
               <div
-                className="col-lg-6 order-1 order-lg-2 hero-img"
+                class="mt-5 col-lg-6 order-1 order-lg-2 hero-img"
                 data-aos="zoom-out"
               >
                 {components[currentComponent]}
@@ -166,10 +177,19 @@ const Homepg = () => {
             </div>
           </div>
         </section>
-
-        <KeyFeatures />
-        <TechFeatures />
-        <Footer />
+        <section id="key-features">
+          <KeyFeatures />
+        </section>
+        <section id="features">
+          <FeatureShow />
+        </section>
+        <section id="get-started">
+          <HandsOn />
+        </section>
+        {/*<TechFeatures />*/}
+        <section id="footer">
+          <Footer />
+        </section>
       </main>
     </>
   );
