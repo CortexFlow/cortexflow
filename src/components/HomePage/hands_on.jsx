@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HandsOn = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-      <div className="section-title mb-4" data-aos="fade-up">
+      <div className="section-title" data-aos="fade-up">
         <h2 className="text-lg sm:text-xl font-semibold">Get Hands On</h2>
       </div>
 
