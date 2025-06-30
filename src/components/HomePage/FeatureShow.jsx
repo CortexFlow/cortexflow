@@ -8,7 +8,7 @@ const FeatureShow = () => {
           <div class="lg:pr-8 lg:pt-4">
             <div class="lg:max-w-lg">
               <h2 class="text-base/7 font-semibold text-indigo-600">
-                Deploy faster
+                Enhanced Monitoring
               </h2>
               <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                 A better workflow

@@ -9,6 +9,7 @@ import AOS from "aos"; // Importa AOS
 import githubLogo from "../assets/img/github.png";
 
 import Character1 from "../Characters/HeroCharacter1";
+import "../css/homepage.css";
 
 import Footer from "../Footer/footer";
 import Navbar from "../navbar/navabar";
@@ -52,7 +53,7 @@ const Homepg = () => {
     // Opzioni per Typed.js
     const options = {
       strings: [
-        "A cutting-edge data simulation and big data analysis framework developed by CortexFlow, designed to simplify the simulation and the analysis of IoT devices.",
+        "open source project aimed at creating an intelligent, lightweight, and efficient service mesh architecture to seamlessly connect cloud and edge devices",
       ],
       showCursor: false,
       typeSpeed: 50,
@@ -76,7 +77,7 @@ const Homepg = () => {
       <Navbar />
       <main className="main">
         <section id="hero" className="mt-30">
-          <div className="container max-h-[1000px] mb-[140px] mx-auto mt-8 p-3.5 lg:max-w-6xl md:max-w-3xl">
+          <div className="container max-h-[1000px] mb-[30px] mx-auto mt-8 p-3.5 lg:max-w-6xl md:max-w-3xl">
             <div className="row gy-4 py-10 ">
               <div class="mt-24 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
                 <h1
@@ -182,14 +183,12 @@ const Homepg = () => {
         </section>
         <section id="features">
           <FeatureShow />
+          <TechFeatures />
         </section>
         <section id="get-started">
           <HandsOn />
         </section>
-        {/*<TechFeatures />*/}
-        <section id="footer">
-          <Footer />
-        </section>
+        <Footer />
       </main>
     </>
   );

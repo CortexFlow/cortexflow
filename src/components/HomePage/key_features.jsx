@@ -5,19 +5,19 @@ const KeyFeatures = () => {
     <>
       <div data-aos="fade-up">
         <div class="bg-white lg:py-4 sm:py-32 md:py-2">
-          <div class="mx-auto lg:max-w-7xl px-6 lg:px-8 md:max-w-3xl md:px-4">
-            <div class="mx-auto max-w-7xl lg:text-center md:text-center">
+          <div class="mx-auto lg:max-w-7xl gap-x-8 gap-y-16 px-6 lg:px-8 md:max-w-3xl md:px-4">
+            <div class="mx-auto lg:text-center md:text-center ">
               <div class="container section-title" data-aos="fade-up">
-                <h2>eBPF Powered Technology</h2>
+                <h2 className="text-xl">🐝 eBPF Powered Technology</h2>
               </div>
               <p class="w-full mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
                 Everything you need to monitor your cluster
               </p>
             </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <div class=" p-3.5 mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-7xl">
               <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                 <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-gray-900">
+                  <dt class="text-xl font-semibold text-gray-900">
                     <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-yellow-400">
                       <svg
                         class="size-6 text-white"
@@ -37,13 +37,13 @@ const KeyFeatures = () => {
                     </div>
                     Networking
                   </dt>
-                  <dd class="mt-2 text-base/7 text-gray-600">
-                    Morbi viverra dui mi arcu sed. Tellus semper adipiscing
-                    suspendisse semper morbi. Odio urna massa nunc massa.
+                  <dd class="mt-2 text-base/8  text-gray-600">
+                    Monitor network events using the eBPF powered technology
+                    without introducing significant overhead
                   </dd>
                 </div>
                 <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-gray-900">
+                  <dt class="text-xl font-semibold text-gray-900">
                     <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
                       <svg
                         class="size-6 text-white"
@@ -63,13 +63,13 @@ const KeyFeatures = () => {
                     </div>
                     Monitoring
                   </dt>
-                  <dd class="mt-2 text-base/7 text-gray-600">
-                    Sit quis amet rutrum tellus ullamcorper ultricies libero
-                    dolor eget. Sem sodales gravida quam turpis enim lacus amet.
+                  <dd class="mt-2 text-base/8 text-gray-600">
+                    Collect monitoring data such as memory usage, CPU and I/O
+                    bottlenecks without requiring application changes
                   </dd>
                 </div>
                 <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-gray-900">
+                  <dt class="text-xl font-semibold text-gray-900">
                     <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-green-500">
                       <svg
                         class="size-6 text-white"
@@ -89,13 +89,14 @@ const KeyFeatures = () => {
                     </div>
                     Observability
                   </dt>
-                  <dd class="mt-2 text-base/7 text-gray-600">
-                    Quisque est vel vulputate cursus. Risus proin diam nunc
-                    commodo. Lobortis auctor congue commodo diam neque.
+                  <dd class="mt-2 text-base/8 text-gray-600">
+                    Observe events in your cluster to improve system
+                    performance, reliability and system optimization with
+                    in-context precise data and insight
                   </dd>
                 </div>
                 <div class="relative pl-16">
-                  <dt class="text-base/7 font-semibold text-gray-900">
+                  <dt class="text-xl font-semibold text-gray-900">
                     <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-red-500">
                       <svg
                         class="size-6 text-white"
@@ -115,10 +116,11 @@ const KeyFeatures = () => {
                     </div>
                     Advanced security
                   </dt>
-                  <dd class="mt-2 text-base/7 text-gray-600">
-                    Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt
-                    mattis aliquet hac quis. Id hac maecenas ac donec pharetra
-                    eget.
+                  <dd class="mt-2 text-base/8 text-gray-600">
+                    Secure your environment with an advanced system protection.
+                    CortexBrain is able to filter malicious network packets
+                    thanks to his packet filter that operates at the lowest
+                    level of the network stack
                   </dd>
                 </div>
               </dl>
