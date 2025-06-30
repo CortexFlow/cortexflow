@@ -14,7 +14,7 @@ const Footer = () => {
               </span>
             </Link>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 font-poppins">
             <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 About us
@@ -128,7 +128,7 @@ const Footer = () => {
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 font-poppins">
             © 2025{" "}
             <Link to="https://github.com/CortexFlow" class="hover:underline">
               CortexFlow
