@@ -26,10 +26,10 @@ const Homepg = () => {
   const typedRef = useRef(null); // Referenza per il DOM di Typed.js
 
   const components = [
-    <div key="1">
+    <div key="1" class="lg:flex md:hidden sm:hidden">
       <Character1 />
     </div>,
-    <div key="1">
+    <div key="1" class="lg:flex md:hidden sm:hidden">
       <Character1 />
     </div>,
   ];
@@ -53,7 +53,7 @@ const Homepg = () => {
     // Opzioni per Typed.js
     const options = {
       strings: [
-        "open source project aimed at creating an intelligent, lightweight, and efficient service mesh architecture to seamlessly connect cloud and edge devices",
+        "Your end-end-to end platform for creating and managing lightweight, intelligent and efficient service mesh architectures, to seamlessly connect cloud and edge devices",
       ],
       showCursor: false,
       typeSpeed: 50,
@@ -76,25 +76,30 @@ const Homepg = () => {
       <MetadataHelmet />
       <Navbar />
       <main className="main">
-        <section id="hero" className="mt-30">
-          <div className="container max-h-[1000px] mb-[30px] mx-auto mt-8 p-3.5 lg:max-w-6xl md:max-w-3xl">
+        <section id="hero" className="mt-15">
+          <div
+            className="container max-h-[1000px] mb-[10px] mx-auto 
+          lg:mt-8 lg:p-3.5 
+          lg:max-w-6xl md:max-w-3xl
+          md:mt-4 md:px-6"
+          >
             <div className="row gy-4 py-10 ">
               <div class="mt-24 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
                 <h1
-                  class="mb-3 lg:text-6xl font-medium mt-30 font-poppins bg-gradient-to-r
+                  class="mb-3 lg:text-7xl font-medium mt-30 font-poppins bg-gradient-to-r
                    from-blue-700 via-yellow-500 to-orange-600 inline-block 
                    text-transparent bg-clip-text
-                   md:max-w-[600px]
+                   md:max-w-[600px] md:text-7xl
                    sm:max-w-[400px] sm:text-3xl
                 "
                 >
                   CortexFlow
                 </h1>
                 <h1
-                  class="lg:text-4xl font-medium mt-30 font-poppins bg-gradient-to-r
+                  class="lg:text-4xl font-medium mt-30 py-3 font-poppins bg-gradient-to-r
                    from-blue-700 via-yellow-500 to-orange-600 inline-block 
                    text-transparent bg-clip-text
-                   md:max-w-[600px]
+                   md:max-w-[600px] md:text-4xl
                    sm:max-w-[400px] sm:text-3xl
                 "
                 >
@@ -171,7 +176,7 @@ const Homepg = () => {
               </div>
               <div
                 class="mt-5 col-lg-6 order-1 order-lg-2 hero-img"
-                data-aos="zoom-out"
+                data-aos="zoom-out lg:flex md:hidden sm:hidden"
               >
                 {components[currentComponent]}
               </div>
