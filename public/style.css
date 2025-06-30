@@ -748,6 +748,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -808,6 +812,18 @@ video {
   height: 100%;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-\[1000px\] {
   max-height: 1000px;
 }
@@ -834,6 +850,18 @@ video {
 
 .w-\[31rem\] {
   width: 31rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .max-w-2xl {
@@ -868,6 +896,10 @@ video {
   max-width: 48rem;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 @keyframes ping {
   75%, 100% {
     transform: scale(2);
@@ -899,6 +931,14 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -917,6 +957,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-x-8 {
@@ -1319,6 +1363,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1684,6 +1738,10 @@ code {
     width: 290px;
   }
 
+  .md\:w-\[48rem\] {
+    width: 48rem;
+  }
+
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1871,6 +1929,11 @@ code {
     margin-bottom: 2rem;
   }
 
+  .lg\:mx-\[-50px\] {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
   .lg\:-ml-0 {
     margin-left: -0px;
   }
@@ -1889,6 +1952,38 @@ code {
 
   .lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mr-\[100px\] {
+    margin-right: 100px;
+  }
+
+  .lg\:ml-\[100px\] {
+    margin-left: 100px;
+  }
+
+  .lg\:ml-\[-100px\] {
+    margin-left: -100px;
+  }
+
+  .lg\:-ml-\[-100px\] {
+    margin-left: 100px;
+  }
+
+  .lg\:-ml-\[100px\] {
+    margin-left: -100px;
+  }
+
+  .lg\:-ml-\[300px\] {
+    margin-left: -300px;
   }
 
   .lg\:flex {
@@ -1929,6 +2024,10 @@ code {
 
   .lg\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .lg\:grid-cols-2 {
