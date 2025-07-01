@@ -10,7 +10,10 @@ const KeyFeatures = () => {
               <div class="container section-title" data-aos="fade-up">
                 <h2 className="text-xl">🐝 eBPF Powered Technology</h2>
               </div>
-              <p class="w-full mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
+              <p
+                class="w-full mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 
+              sm:text-5xl lg:text-balance xs:text-4xl text-center "
+              >
                 Everything you need to monitor your cluster
               </p>
             </div>
