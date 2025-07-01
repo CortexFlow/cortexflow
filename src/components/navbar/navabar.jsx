@@ -11,7 +11,7 @@ const Homepg = () => {
         <Announcements />
       </div>
       {/*navbar sotto*/}
-      <div className=" px-6 bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 ">
+      <div className=" px-6 bg-slate-900 ">
         <div
           className="max-w-7xl mx-auto md:px-2 py-4 flex items-center justify-between
           lg:px-4
@@ -26,7 +26,10 @@ const Homepg = () => {
           </Link>
 
           {/* Navbar */}
-          <ul className="font-poppins space-x-8 text-sm font-medium text-gray-300 md:hidden sm:hidden lg:flex">
+          <ul
+            className="font-poppins space-x-8 text-sm font-medium text-gray-300 
+          md:hidden sm:hidden lg:flex xs:hidden"
+          >
             <li>
               <a
                 href="#hero"
@@ -49,6 +52,14 @@ const Homepg = () => {
                 className="hover:text-blue-500 transition duration-300"
               >
                 Features
+              </a>
+            </li>
+            <li>
+              <a
+                href="#get-started"
+                className="hover:text-blue-500 transition duration-300"
+              >
+                Install
               </a>
             </li>
             <li>
