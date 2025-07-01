@@ -2,9 +2,16 @@ import React from "react";
 
 const FeatureShow = () => {
   return (
-    <div className="overflow-hidden bg-white mt-20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+      className="overflow-hidden bg-white mt-20"
+      data-aos="fade-left"
+      data-aos-delay="200"
+    >
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="section-title mx-auto lg:hidden md:flex sm:flex xs:flex ">
+            <h2 className="text-lg sm:text-xl font-semibold ">Features</h2>
+          </div>
           <div className="lg:pr-8 lg:pt-2">
             <div className="lg:max-w-lg">
               <h2 className="text-base/7 font-semibold text-indigo-600">
@@ -44,7 +51,7 @@ const FeatureShow = () => {
                     Metrics, logs, and tracing will be natively integrated into
                     the platform. In just a few clicks, you'll get full
                     visibility into traffic, errors, and performance across all
-                    services, no extra setup or service reconfiguration needed.
+                    services, no extra setup or service reconfiguration needed
                   </div>
                 </li>
 
@@ -108,7 +115,9 @@ const FeatureShow = () => {
           <img
             src="https://www.cortexflow.org/app.png"
             alt="Product screenshot"
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 
+            sm:hidden md:-ml-4 lg:-ml-0
+            md:hidden lg:flex xs:hidden"
             width="2432"
             height="1442"
           />
