@@ -2,8 +2,12 @@ import React from "react";
 
 const TechFeatures = () => {
   return (
-    <div className="overflow-hidden bg-white py-20 sm:py-20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+      className="overflow-hidden bg-white py-20 xs:py-20"
+      data-aos="fade-right"
+      data-aos-delay="200"
+    >
+      <div className="mx-auto max-w-7xl lg:px-8 xs:px-12">
         {/*
         mx-auto grid max-w-2xl grid-cols-1 gap-x-8
          sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2*/}
@@ -15,7 +19,9 @@ const TechFeatures = () => {
             <img
               src="https://www.cortexflow.org/example.gif"
               alt="Product screenshot"
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-[300px]"
+              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 
+              sm:hidden md:-ml-4 lg:-ml-[300px]
+              md:hidden lg:flex xs:hidden"
               width="2432"
               height="1442"
             />
@@ -23,17 +29,17 @@ const TechFeatures = () => {
 
           {/* Testo a destra */}
           <div className="lg:pl-8 lg:pt-2">
-            <div className="lg:max-w-2xl space-x-6">
-              <h2 className="text-base ml-6 font-semibold leading-7 text-indigo-600">
+            <div className="lg:max-w-2xl">
+              <h2 className="text-base font-semibold leading-7 text-indigo-600">
                 CLI Features
               </h2>
               <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                A better workflow
+                Smarter CLI, Smoother Workflows
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Our CLI streamlines service mesh management with intuitive
-                commands, simplified deployment, and seamless upgrades — no
-                overhead.
+                commands, simplified deployment, and seamless upgrades with
+                minimum overhead
               </p>
 
               <ul className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
@@ -65,7 +71,7 @@ const TechFeatures = () => {
                     integrates seamlessly with existing Kubernetes environments.
                     Core components are deployed automatically using optimized
                     defaults, so you don’t have to worry about manual
-                    configuration.
+                    configuration
                   </div>
                 </li>
                 {/* Feature 2 */}
@@ -74,7 +80,7 @@ const TechFeatures = () => {
                     className="w-[20px] h-[20px] mt-1 text-blue-800 flex-shrink-0"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -91,7 +97,7 @@ const TechFeatures = () => {
                     </strong>{" "}
                     Upgrades are seamlessly managed and versioned, with
                     automatic rollback in case of failure. Each component can be
-                    updated independently without disrupting running services.
+                    updated independently without disrupting running services
                   </div>
                 </li>
 
@@ -114,7 +120,7 @@ const TechFeatures = () => {
                     The CLI and dashboard are built for clarity and ease of use,
                     even for teams new to service meshes. Configurations are
                     clean, declarative, and include presets for common use
-                    cases, no useless overhead.
+                    cases, no useless overhead
                   </div>
                 </li>
               </ul>
