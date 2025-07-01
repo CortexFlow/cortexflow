@@ -13,12 +13,12 @@ const HandsOn = () => {
           Get started with CortexFlow
         </p>
 
-        <div className="mt-12 sm:mt-16 lg:mt-24 max-w-3xl lg:max-w-4xl mx-auto">
+        <div className="mt-12 sm:mt-16 lg:mt-12 max-w-3xl lg:max-w-4xl mx-auto">
           <dl className="grid grid-cols-1 md:grid-cols-2">
             {/* Card 1 - Documentation */}
             <div
               className="relative p-6 mb-10 mx-auto rounded-lg shadow-xl border border-gray-200 bg-white
-              md:w-[290px] md:h-[310px] lg:w-[400px] lg:h-[300px]"
+              md:w-[290px] md:h-[310px] lg:w-[400px] lg:h-[300px] hover:shadow-neutral-400"
             >
               <dt
                 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-4
@@ -29,7 +29,7 @@ const HandsOn = () => {
               <dd className="text-sm md:text-[15px] lg:text-base text-gray-600 mb-6 text-center">
                 Discover how CortexBrain works. Deep dive into the core
                 internals and learn how CortexBrain can be used to enhance your
-                monitoring experience.
+                monitoring experience
               </dd>
               <div className="flex flex-col sm:flex-row justify-center gap-4 md:mt-12">
                 <Link
@@ -50,7 +50,7 @@ const HandsOn = () => {
             {/* Card 2 - Installation */}
             <div
               className="relative p-6 mb-10 mx-auto rounded-lg shadow-xl border border-gray-200 bg-white
-              md:w-[290px] md:h-[310px] lg:w-[400px] lg:h-[300px]
+              md:w-[290px] md:h-[310px] lg:w-[400px] lg:h-[300px] hover:shadow-neutral-400
               "
             >
               <dt
@@ -61,7 +61,7 @@ const HandsOn = () => {
               </dt>
               <dd className="text-sm md:text-base text-gray-600 mb-6 text-center">
                 Learn how to install and use the Command Line Interface (CLI) to
-                install CortexBrain's core components.
+                install CortexBrain's core components
               </dd>
               <div
                 className="flex justify-center md:mt-12
