@@ -20,7 +20,13 @@ const Homepg = () => {
           {/* Logo e nome */}
           <Link to="/" className="flex items-center space-x-3">
             {/*<img src={logobrain} alt="CortexFlow Logo" className="h-10 w-10" />*/}
-            <span className="text-2xl font-medium font-poppins text-white tracking-wide ">
+            <span
+              className="font-medium font-poppins text-white tracking-wide
+            lg:text-2xl
+            md:text-2xl
+            sm:text-xl
+            xs:text-xl "
+            >
               CortexFlow
             </span>
           </Link>
