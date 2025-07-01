@@ -9,14 +9,19 @@ const Footer = () => {
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <Link to="https://www.cortexflow.org/" class="flex items-center">
-              <span class="font-poppins font-medium self-center text-2xl tracking-wide whitespace-nowrap dark:text-white">
+              <span
+                class="font-poppins font-medium self-center tracking-wide whitespace-nowrap dark:text-white
+              lg:text-5xl
+              md:text-5xl md:mr-10
+              xs:text-5xl xs:mb-10"
+              >
                 CortexFlow
               </span>
             </Link>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 font-poppins">
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 class="mb-6 text-sm font-medium text-gray-900 uppercase dark:text-white">
                 About us
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
@@ -47,7 +52,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 class="mb-6 text-sm font-medium text-gray-900 uppercase dark:text-white">
                 Community
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
@@ -86,7 +91,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 class="mb-6 text-sm font-medium text-gray-900 uppercase dark:text-white">
                 Info
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
