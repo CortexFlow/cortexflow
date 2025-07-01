@@ -26,10 +26,10 @@ const Homepg = () => {
   const typedRef = useRef(null); // Referenza per il DOM di Typed.js
 
   const components = [
-    <div key="1" class="lg:flex md:hidden sm:hidden">
+    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden">
       <Character1 />
     </div>,
-    <div key="1" class="lg:flex md:hidden sm:hidden">
+    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden">
       <Character1 />
     </div>,
   ];
@@ -83,31 +83,34 @@ const Homepg = () => {
           lg:max-w-6xl md:max-w-3xl
           md:mt-4 md:px-6"
           >
-            <div className="row gy-4 py-10 ">
-              <div class="mt-24 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
+            <div className="row  py-10 ">
+              <div class="mt-12 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
                 <h1
                   class="mb-3 lg:text-7xl font-medium mt-30 font-poppins bg-gradient-to-r
                    from-blue-700 via-yellow-500 to-orange-600 inline-block 
                    text-transparent bg-clip-text
-                   md:max-w-[600px] md:text-7xl
-                   sm:max-w-[400px] sm:text-3xl
+                   lg:mx-0
+                   md:max-w-[600px] md:text-7xl md:mx-0
+                   sm:max-w-[400px] sm:text-3xl 
+                   xs:max-w-[600px] xs:text-7xl xs:mt-6 xs:mx-auto
                 "
                 >
                   CortexFlow
                 </h1>
                 <h1
-                  class="lg:text-4xl font-medium mt-30 py-3 font-poppins bg-gradient-to-r
+                  class="lg:text-4xl font-medium py-3 font-poppins bg-gradient-to-r
                    from-blue-700 via-yellow-500 to-orange-600 inline-block 
                    text-transparent bg-clip-text
-                   md:max-w-[600px] md:text-4xl
-                   sm:max-w-[400px] sm:text-3xl
+                   lg:text-left
+                   md:max-w-[600px] md:text-4xl md:text-left
+                   xs:max-w-[600px] xs:text-xl xs:text-center
                 "
                 >
                   Open-source Container Networking Infrastructure and Monitoring
                   Platform
                 </h1>
                 <p
-                  class="mb-3 mt-10 font-poppins text-xl"
+                  class="mb-3 mt-10 font-poppins text-base xs:mx-auto xs:text-center xs:mt-5 lg:text-left md:text-left lg:mx-0 md:mx-0"
                   data-aos="fade-up"
                   data-aos-delay="100"
                   ref={typedRef} // Imposta la referenza qui
@@ -115,7 +118,8 @@ const Homepg = () => {
                   {/* Typed.js scriverà qui */}
                 </p>
                 <div
-                  className="mt-5 d-flex flex-column flex-md-row align-items-center "
+                  className="mt-5 flex align-items-center xs:mx-auto md:mx-0 lg:mx-0
+                  "
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -124,7 +128,7 @@ const Homepg = () => {
                       href="https://github.com/CortexFlow/CortexBrain"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-poppins hidden md:inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow transition duration-300"
+                      className="font-poppins md:inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow transition duration-300"
                       title="Start contributing right now!"
                     >
                       Contribute
@@ -132,7 +136,7 @@ const Homepg = () => {
 
                     <button
                       type="button"
-                      className="btn btn-info ms-2"
+                      className="btn btn-info ms-2 "
                       onClick={() => setShowInfo(!showInfo)}
                       title="Contributing guidelines"
                     >
@@ -141,7 +145,8 @@ const Homepg = () => {
                   </form>
                   <a
                     href="https://github.com/CortexFlow/CortexBrain"
-                    className="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0 hover:text-blue-500"
+                    className="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-2 ms-md-4 mt-md-0 hover:text-blue-500 
+                    "
                   >
                     <img
                       src={githubLogo}
@@ -176,7 +181,7 @@ const Homepg = () => {
               </div>
               <div
                 class="mt-5 col-lg-6 order-1 order-lg-2 hero-img"
-                data-aos="zoom-out lg:flex md:hidden sm:hidden"
+                data-aos="zoom-out lg:flex md:hidden sm:hidden xs:hidden"
               >
                 {components[currentComponent]}
               </div>
@@ -186,11 +191,11 @@ const Homepg = () => {
         <section id="key-features">
           <KeyFeatures />
         </section>
-        <section id="features">
+        <section id="features" class="xs:pt-[20px]">
           <FeatureShow />
           <TechFeatures />
         </section>
-        <section id="get-started">
+        <section id="get-started" class="xs:pt-[30px]">
           <HandsOn />
         </section>
         <Footer />
