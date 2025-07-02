@@ -1,6 +1,6 @@
 import React from "react";
 
-import cfcli from "../assets/img/cfcli.webp"
+import cfcli from "../assets/img/cfcli_.webp"
 
 const TechFeatures = () => {
   return (

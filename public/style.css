@@ -140,9 +140,6 @@
 .uppercase {
   text-transform: uppercase;
 }
-.underline {
-  text-decoration-line: underline;
-}
 .opacity-75 {
   opacity: 75%;
 }
