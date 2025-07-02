@@ -3,11 +3,11 @@ import React from "react";
 const TechFeatures = () => {
   return (
     <div
-      className="overflow-hidden bg-white py-20 xs:py-20"
+      className="overflow-hidden bg-white py-20 xs:py-20 sxs:py-20"
       data-aos="fade-right"
       data-aos-delay="200"
     >
-      <div className="mx-auto max-w-7xl lg:px-8 xs:px-12">
+      <div className="mx-auto max-w-7xl lg:px-8 xs:px-12 sxs:px-12">
         {/*
         mx-auto grid max-w-2xl grid-cols-1 gap-x-8
          sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2*/}
@@ -21,7 +21,7 @@ const TechFeatures = () => {
               alt="Product screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 
               sm:hidden md:-ml-4 lg:-ml-[300px]
-              md:hidden lg:flex xs:hidden"
+              md:hidden lg:flex xs:hidden sxs:hidden"
               width="2432"
               height="1442"
             />

@@ -13,7 +13,8 @@ const Footer = () => {
                 class="font-poppins font-medium self-center tracking-wide whitespace-nowrap dark:text-white
               lg:text-5xl
               md:text-5xl md:mr-10
-              xs:text-5xl xs:mb-10"
+              xs:text-5xl xs:mb-10 
+              sxs:text-5xl sxs:mb-10"
               >
                 CortexFlow
               </span>
@@ -132,7 +133,7 @@ const Footer = () => {
           </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="w-full sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 font-poppins">
             © 2025{" "}
             <Link to="https://github.com/CortexFlow" class="hover:underline">
@@ -140,10 +141,11 @@ const Footer = () => {
             </Link>
             . All Rights Reserved.
           </span>
-          <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <div class="flex mt-4 sm:justify-center sm:mt-0
+                      sxs:justify-center sxs:mx-auto lg:mr-5 md:mr-5 ">
             <Link
               to="https://github.com/CortexFlow"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white lg:ms-5"
             >
               <svg
                 class="w-4 h-4"

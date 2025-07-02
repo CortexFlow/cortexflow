@@ -117,7 +117,7 @@ const FeatureShow = () => {
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 
             sm:hidden md:-ml-4 lg:-ml-0
-            md:hidden lg:flex xs:hidden"
+            md:hidden lg:flex xs:hidden sxs:hidden"
             width="2432"
             height="1442"
           />

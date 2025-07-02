@@ -21,11 +21,12 @@ const Homepg = () => {
           <Link to="/" className="flex items-center space-x-3">
             {/*<img src={logobrain} alt="CortexFlow Logo" className="h-10 w-10" />*/}
             <span
-              className="font-medium font-poppins text-white tracking-wide
+              className="font-semibold font-poppins text-white tracking-wide
             lg:text-2xl
             md:text-2xl
             sm:text-xl
-            xs:text-xl "
+            xs:text-xl
+            sxs:text-xl"
             >
               CortexFlow
             </span>
@@ -34,7 +35,7 @@ const Homepg = () => {
           {/* Navbar */}
           <ul
             className="font-poppins space-x-8 text-sm font-medium text-gray-300 
-          md:hidden sm:hidden lg:flex xs:hidden"
+          md:hidden sm:hidden lg:flex xs:hidden sxs:hidden"
           >
             <li>
               <a

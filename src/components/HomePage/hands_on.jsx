@@ -9,7 +9,8 @@ const HandsOn = () => {
       </div>
 
       <div data-aos="fade-up">
-        <p className="w-full mt-2 text-gray-900 font-semibold tracking-tight text-2xl sm:text-3xl md:text-[35px] lg:text-5xl">
+        <p className="w-full mt-2 text-gray-900 font-semibold tracking-tight text-4xl 
+        sm:text-4xl md:text-4xl lg:text-4xl xs:text-4xl">
           Get started with CortexFlow
         </p>
 
@@ -69,7 +70,8 @@ const HandsOn = () => {
               >
                 <Link
                   to="https://docs.cortexflow.org"
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg font-medium shadow transition duration-300"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg font-medium shadow transition duration-300
+                  "
                 >
                   Install CortexBrain
                 </Link>

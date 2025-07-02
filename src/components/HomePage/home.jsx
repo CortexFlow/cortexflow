@@ -26,10 +26,10 @@ const Homepg = () => {
   const typedRef = useRef(null); // Referenza per il DOM di Typed.js
 
   const components = [
-    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden">
+    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden sxs:hidden">
       <Character1 />
     </div>,
-    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden">
+    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden sxs:hidden">
       <Character1 />
     </div>,
   ];
@@ -93,6 +93,7 @@ const Homepg = () => {
                    md:max-w-[600px] md:text-7xl md:mx-0
                    sm:max-w-[400px] sm:text-3xl 
                    xs:max-w-[600px] xs:text-7xl xs:mt-6 xs:mx-auto
+                   sxs:max-w-[600px] sxs:text-6xl sxs:mt-6 sxs:mx-auto
                 "
                 >
                   CortexFlow
@@ -104,13 +105,18 @@ const Homepg = () => {
                    lg:text-left
                    md:max-w-[600px] md:text-4xl md:text-left
                    xs:max-w-[600px] xs:text-xl xs:text-center
+                   sxs:max-w-[600px] sxs:text-xl sxs:text-center
                 "
                 >
                   Open-source Container Networking Infrastructure and Monitoring
                   Platform
                 </h1>
                 <p
-                  class="mb-3 mt-10 font-poppins text-base xs:mx-auto xs:text-center xs:mt-5 lg:text-left md:text-left lg:mx-0 md:mx-0"
+                  class="mb-3 mt-10 font-poppins text-base 
+                  xs:mx-auto xs:text-center xs:mt-5 
+                  sxs:mx-auto sxs:text-center sxs:mt-5 
+                  lg:text-left md:text-left lg:mx-0 
+                  md:mx-0"
                   data-aos="fade-up"
                   data-aos-delay="100"
                   ref={typedRef} // Imposta la referenza qui
@@ -118,7 +124,11 @@ const Homepg = () => {
                   {/* Typed.js scriverà qui */}
                 </p>
                 <div
-                  className="mt-5 flex align-items-center xs:mx-auto md:mx-0 lg:mx-0
+                  className="mt-5 flex align-items-center 
+                  xs:mx-auto 
+                  sxs:mx-auto
+                  md:mx-0 
+                  lg:mx-0
                   "
                   data-aos="fade-up"
                   data-aos-delay="200"
@@ -191,11 +201,11 @@ const Homepg = () => {
         <section id="key-features">
           <KeyFeatures />
         </section>
-        <section id="features" class="xs:pt-[20px]">
+        <section id="features" class="xs:pt-[20px] sxs:pt-[0px]">
           <FeatureShow />
           <TechFeatures />
         </section>
-        <section id="get-started" class="xs:pt-[30px]">
+        <section id="get-started" class="xs:pt-[30px] sxs:pt-[0px]">
           <HandsOn />
         </section>
         <Footer />
