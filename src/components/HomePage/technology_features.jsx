@@ -1,5 +1,7 @@
 import React from "react";
 
+import cfcli from "../assets/img/cfcli.webp"
+
 const TechFeatures = () => {
   return (
     <div
@@ -17,7 +19,7 @@ const TechFeatures = () => {
         >
           <div className="flex justify-center">
             <img
-              src="https://www.cortexflow.org/example.gif"
+              src={cfcli}
               alt="Product screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 
               sm:hidden md:-ml-4 lg:-ml-[300px]
