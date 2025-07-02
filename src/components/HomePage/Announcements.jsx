@@ -6,9 +6,6 @@ const Announcements = () => {
       <p className="text-center font-medium lg:text-[13px] md:text-[13px] xs:text-[11px] sxs:text-[11px]">
         ⭐ CortexBrain is currently in active development so occasional bugs may
         occur ⭐
-        <a href="#" className="inline-block underline">
-          {" "}
-        </a>
       </p>
     </div>
   );
