@@ -2,10 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import "aos/dist/aos.css";
-import "glightbox/dist/css/glightbox.min.css";
 import AOS from "aos"; // Importa AOS
 
 import githubLogo from "../../public/assets/img/github.png";
@@ -88,8 +85,8 @@ const Homepg = () => {
             <div className="row  py-10 ">
               <div className="mt-12 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
                 <h1
-                  className="mb-3 lg:text-7xl font-medium mt-30 font-poppins bg-gradient-to-r
-                   from-blue-700 via-yellow-500 to-orange-600 inline-block 
+                  className="inline-block mb-3 lg:text-7xl font-medium mt-30 font-poppins bg-gradient-to-r
+                   from-blue-700 via-yellow-500 to-orange-600  
                    text-transparent bg-clip-text
                    lg:mx-0
                    md:max-w-[600px] md:text-7xl md:mx-0
