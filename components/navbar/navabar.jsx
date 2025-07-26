@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import githubLogo from "../assets/img/github.png";
+import Link from "next/link";
+import githubLogo from "../../public/assets/img/github.png";
 import Announcements from "../HomePage/Announcements";
 
 const Homepg = () => {
   return (
-    <nav class="flex-col w-full shadow-lg fixed z-50">
+    <nav className="flex-col w-full shadow-lg fixed z-50">
       {/*announcement tabs*/}
       <div className="w-full mx-auto bg-green-400 max-w-9xl">
         <Announcements />
@@ -18,7 +18,7 @@ const Homepg = () => {
       sm:px-3"
         >
           {/* Logo e nome */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3">
             {/*<img src={logobrain} alt="CortexFlow Logo" className="h-10 w-10" />*/}
             <span
               className="font-semibold font-poppins text-white tracking-wide
@@ -84,20 +84,20 @@ const Homepg = () => {
               >
                 Documentation
               </a>
-              <span class="relative flex size-1 mt-2 ml-2">
-                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
-                <span class="relative inline-flex size-1 rounded-full bg-sky-500"></span>
+              <span className="relative flex size-1 mt-2 ml-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                <span className="relative inline-flex size-1 rounded-full bg-sky-500"></span>
               </span>
             </li>
           </ul>
 
           {/* Get Started button */}
           <Link
-            to="https://github.com/CortexFlow/CortexBrain"
+            href="https://github.com/CortexFlow/CortexBrain"
             className="font-poppins hidden items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow transition duration-300
             md:hidden sm:hidden lg:inline-flex"
           >
-            <img src={githubLogo} alt="GitHub" className="h-4 w-4 mr-2" />
+            <img src={githubLogo.src} alt="GitHub" className="h-4 w-4 mr-2" />
             Get Started
           </Link>
         </div>

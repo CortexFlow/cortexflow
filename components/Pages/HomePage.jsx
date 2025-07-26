@@ -1,7 +1,7 @@
 import React from "react";
 import Homepg from "../HomePage/home";
 
-const HomePage = () => {
+export default function HomePage(){
   return (
     <div>
       <Homepg/>
@@ -9,4 +9,3 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;

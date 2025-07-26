@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 
 // Styling
-import "../css/error404.css";
+import "../../public/assets/css/homepage.css"
+
 import Error404 from "../Characters/Error404";
 
 const ErrorPage = () => {

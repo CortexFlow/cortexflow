@@ -627,7 +627,7 @@ section,
   padding: 80px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../assets/img/hero-bg.png) top center no-repeat;
+  background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
   margin-top: 100px;
 }
@@ -833,4 +833,112 @@ h1.aos-init.aos-animate {
 
 button.btn.btn-info.ms-2 {
   background: #7d88ec;
+}
+
+
+.not-found {
+  padding: 40px;
+  text-align: center;
+}
+
+.error-template {
+  max-width: 930px;
+  margin: auto auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-template h1 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.error-template h2 {
+  font-size: 18px;
+  color: #666;
+}
+
+.error-details {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #999;
+}
+
+.error-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.error-actions .btn {
+  margin: 0 10px;
+}
+.typed-text {
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  white-space: nowrap; /* no wrap--> impedisce al testo di andare a capo  */
+  letter-spacing: 0.15em; /* Spaziatura tra le lettere */
+  animation: typing 3.5s steps(30, end),
+    /* Anima la digitazione in 3.5 secondi */ blink-caret 0.75s step-end
+      infinite; /* Cursore lampeggiante */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import cfcli from "../assets/img/cfcli_.webp";
+import cfcli from "../../public/assets/img/cfcli_.webp";
 
 const TechFeatures = () => {
   return (
@@ -19,7 +19,7 @@ const TechFeatures = () => {
         >
           <div className="flex justify-center">
             <img
-              src={cfcli}
+              src={cfcli.src}
               alt="Product screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 
               sm:hidden md:-ml-4 lg:-ml-[180px]

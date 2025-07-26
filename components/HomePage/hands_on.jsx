@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const HandsOn = () => {
   return (
@@ -9,8 +9,10 @@ const HandsOn = () => {
       </div>
 
       <div data-aos="fade-up">
-        <p className="w-full mt-2 text-gray-900 font-semibold tracking-tight text-4xl 
-        sm:text-4xl md:text-4xl lg:text-4xl xs:text-4xl">
+        <p
+          className="w-full mt-2 text-gray-900 font-semibold tracking-tight text-4xl 
+        sm:text-4xl md:text-4xl lg:text-4xl xs:text-4xl"
+        >
           Get started with CortexFlow
         </p>
 
@@ -34,13 +36,13 @@ const HandsOn = () => {
               </dd>
               <div className="flex flex-col sm:flex-row justify-center gap-4 md:mt-12">
                 <Link
-                  to="https://docs.cortexflow.org"
+                  href="https://docs.cortexflow.org"
                   className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg font-medium shadow transition duration-300"
                 >
                   Read
                 </Link>
                 <Link
-                  to="https://crates.io/crates/cortexflow-cli"
+                  href="https://crates.io/crates/cortexflow-cli"
                   className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg font-medium shadow transition duration-300"
                 >
                   crates.io
@@ -69,7 +71,7 @@ const HandsOn = () => {
               "
               >
                 <Link
-                  to="https://docs.cortexflow.org"
+                  href="https://docs.cortexflow.org"
                   className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg font-medium shadow transition duration-300
                   "
                 >

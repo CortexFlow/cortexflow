@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState, useRef } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,10 +8,10 @@ import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.min.css";
 import AOS from "aos"; // Importa AOS
 
-import githubLogo from "../assets/img/github.png";
+import githubLogo from "../../public/assets/img/github.png";
 
 import Character1 from "../Characters/HeroCharacter1";
-import "../css/homepage.css";
+import "../../public/assets/css/homepage.css"
 
 import Footer from "../Footer/footer";
 import Navbar from "../navbar/navabar";
@@ -26,10 +28,10 @@ const Homepg = () => {
   const typedRef = useRef(null); // Referenza per il DOM di Typed.js
 
   const components = [
-    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden sxs:hidden">
+    <div key="1" className="lg:flex md:hidden sm:hidden xs:hidden sxs:hidden">
       <Character1 />
     </div>,
-    <div key="1" class="lg:flex md:hidden sm:hidden xs:hidden sxs:hidden">
+    <div key="1" className="lg:flex md:hidden sm:hidden xs:hidden sxs:hidden">
       <Character1 />
     </div>,
   ];
@@ -84,9 +86,9 @@ const Homepg = () => {
           md:mt-4 md:px-6"
           >
             <div className="row  py-10 ">
-              <div class="mt-12 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
+              <div className="mt-12 col-lg-6 d-flex font-normal flex-column justify-content-center font-poppins">
                 <h1
-                  class="mb-3 lg:text-7xl font-medium mt-30 font-poppins bg-gradient-to-r
+                  className="mb-3 lg:text-7xl font-medium mt-30 font-poppins bg-gradient-to-r
                    from-blue-700 via-yellow-500 to-orange-600 inline-block 
                    text-transparent bg-clip-text
                    lg:mx-0
@@ -99,7 +101,7 @@ const Homepg = () => {
                   CortexFlow
                 </h1>
                 <h1
-                  class="lg:text-4xl font-medium py-3 font-poppins bg-gradient-to-r
+                  className="lg:text-4xl font-medium py-3 font-poppins bg-gradient-to-r
                    from-blue-700 via-yellow-500 to-orange-600 inline-block 
                    text-transparent bg-clip-text
                    lg:text-left
@@ -112,7 +114,7 @@ const Homepg = () => {
                   Platform
                 </h1>
                 <p
-                  class="mb-3 mt-10 font-poppins text-base 
+                  className="mb-3 mt-10 font-poppins text-base 
                   xs:mx-auto xs:text-center xs:mt-5 
                   sxs:mx-auto sxs:text-center sxs:mt-5 
                   lg:text-left md:text-left lg:mx-0 
@@ -159,7 +161,7 @@ const Homepg = () => {
                     "
                   >
                     <img
-                      src={githubLogo}
+                      src={githubLogo.src}
                       alt="GitHub Logo"
                       className="github-logo"
                       title="view on Github"
@@ -190,7 +192,7 @@ const Homepg = () => {
                 )}
               </div>
               <div
-                class="mt-5 col-lg-6 order-1 order-lg-2 hero-img"
+                className="mt-5 col-lg-6 order-1 order-lg-2 hero-img"
                 data-aos="zoom-out lg:flex md:hidden sm:hidden xs:hidden"
               >
                 {components[currentComponent]}
@@ -201,11 +203,11 @@ const Homepg = () => {
         <section id="key-features">
           <KeyFeatures />
         </section>
-        <section id="features" class="xs:pt-[20px] sxs:pt-[0px]">
+        <section id="features" className="xs:pt-[20px] sxs:pt-[0px]">
           <FeatureShow />
           <TechFeatures />
         </section>
-        <section id="get-started" class="xs:pt-[30px] sxs:pt-[0px]">
+        <section id="get-started" className="xs:pt-[30px] sxs:pt-[0px]">
           <HandsOn />
         </section>
         <Footer />

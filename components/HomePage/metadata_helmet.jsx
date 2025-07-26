@@ -1,9 +1,9 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import Head  from "next/head";
 
 const metadata_helmet = () => {
   return (
-    <Helmet>
+    <Head>
       <title>
         CortexFlow - Open-source Container Networking Infrastructure and
         Monitoring Platform
@@ -21,7 +21,7 @@ const metadata_helmet = () => {
       />
       <meta name="author" content="CortexFlow" />
       <link rel="canonical" href="https://www.cortexflow.org/" />
-    </Helmet>
+    </Head>
   );
 };
 
